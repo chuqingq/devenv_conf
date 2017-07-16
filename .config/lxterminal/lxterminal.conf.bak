@@ -1,0 +1,17 @@
+[general]
+fontname=微软雅黑Monaco 12
+selchars=-A-Za-z0-9,./?%&#:_
+scrollback=99999
+bgcolor=#1eb81eb81eb8
+bgalpha=56540
+fgcolor=#aaaaaaaaaaaa
+disallowbold=true
+cursorblinks=true
+cursorunderline=false
+audiblebell=true
+tabpos=top
+hidescrollbar=false
+hidemenubar=true
+hideclosebutton=true
+disablef10=false
+disablealt=false
