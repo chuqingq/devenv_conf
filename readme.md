@@ -24,3 +24,9 @@ nodejs
 golang
 mongodb
 ```
+
+## install linuxbrew
+
+```
+http://linuxbrew.sh/
+```
