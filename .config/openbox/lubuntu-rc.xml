@@ -325,11 +325,11 @@
     <!-- Keybindings for window tiling -->
     <keybind key="W-Left">        # HalfLeftScreen
       <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo"><x>0</x><y>0</y><height>97%</height><width>50%</width></action>
+      <action name="MoveResizeTo"><x>0</x><y>0</y><height>100%</height><width>50%</width></action>
     </keybind>
     <keybind key="W-Right">        # HalfRightScreen
       <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo"><x>-0</x><y>0</y><height>97%</height><width>50%</width></action>
+      <action name="MoveResizeTo"><x>-0</x><y>0</y><height>100%</height><width>50%</width></action>
     </keybind>
     <keybind key="W-Up">        # HalfUpperScreen
       <action name="UnmaximizeFull"/>
@@ -338,11 +338,6 @@
     <keybind key="W-Down">        # HalfLowerScreen
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo"><x>0</x><y>-0</y><width>100%</width><height>50%</height></action>
-    </keybind>
-    <keybind key="W-l">
-      <action name="Execute">
-        <command>lubuntu-logout</command>
-      </action>
     </keybind>
     <!-- Keybindings for running applications on Home + E -->
     <keybind key="W-e">
@@ -354,31 +349,21 @@
         <command>lxsession-default file_manager</command>
       </action>
     </keybind>
-    <keybind key="W-f">
+    <!-- Keybindings for running Run menu from Lxpanel on Home + R-->
+    <keybind key="W-r">
       <action name="Execute">
-        <command>catfish</command>
+        <command>lxsession-default launcher</command>
       </action>
     </keybind>
-    <!-- Keybindings for running Run menu from Lxpanel on Home + R
-    <keybind key="W-r">
-      <action name="Execute"><command>lxsession-default launcher_manager</command></action>
-    </keybind>
-    <keybind key="A-F2">
-      <action name="Execute"><command>lxsession-default launcher_manager</command></action>
-    </keybind>
-    -->
-    <keybind key="W-r">
+    <keybind key="W-l">
       <action name="Execute">
-        <command>lxpanelctl run</command>
+        <command>lubuntu-logout</command>
       </action>
     </keybind>
     <keybind key="A-F2">
       <action name="Execute">
-        <command>lxpanelctl run</command>
+        <command>lxsession-default launcher</command>
       </action>
-    </keybind>
-    <keybind key="F10">
-      <action name="ToggleMaximize"/>
     </keybind>
     <!-- Keybindings for running Menu from Lxpanel -->
     <keybind key="A-F1">
@@ -394,6 +379,9 @@
     <!-- Keybindings to toggle fullscreen -->
     <keybind key="F11">
       <action name="ToggleFullscreen"/>
+    </keybind>
+    <keybind key="F10">
+      <action name="ToggleMaximize"/>
     </keybind>
     <!-- Launch task manager on Ctrl + Alt + Del-->
     <keybind key="C-A-Delete">
@@ -465,7 +453,7 @@
     <!-- Keybindings for Multimedia Keys and LCD Backlight (alternative when not using gnome-power-manager or xfce4-volumed) -->
     <keybind key="C-F7">
       <action name="Execute">
-        <command>sleep 2;xset dpms force off</command>
+        <command>xset dpms force off</command>
       </action>
     </keybind>
     <keybind key="C-F10">
