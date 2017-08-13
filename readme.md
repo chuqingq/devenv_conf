@@ -40,7 +40,7 @@ apt remove abiword gnumeric sylpheed transmission simple-scan pidgin
 
 安装：
 ```
-apt install flashplugin-installer vlc libreoffice terminator
+apt install vlc libreoffice terminator chromium-browser
 ```
 
 ## flash
