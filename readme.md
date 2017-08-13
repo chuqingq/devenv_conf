@@ -43,6 +43,13 @@ apt remove abiword gnumeric sylpheed transmission simple-scan pidgin
 apt install flashplugin-installer vlc libreoffice terminator
 ```
 
+## flash
+
+```
+sudo apt install pepperflashplugin-nonfree
+sudo update-pepperflashplugin-nonfree --install
+```
+
 ## config
 
 ```
