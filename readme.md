@@ -3,7 +3,6 @@
 ## installation
 
 
-
 ## configuration
 
 ### apt source
@@ -33,14 +32,11 @@ http://linuxbrew.sh/
 
 ## software
 
-卸载不用的软件：
 ```
+# uninstall
 apt remove abiword gnumeric sylpheed transmission simple-scan pidgin
-```
-
-安装：
-```
-apt install vlc libreoffice terminator chromium-browser
+# install
+apt install flashplugin-installer vlc libreoffice terminator
 ```
 
 ## flash
@@ -63,7 +59,7 @@ openbox/lubuntu-rc.xml
 
 ```
 sudo apt remove fcitx-module-kimpanel
+sudo reboot
 ```
 
-然后重启。
 
