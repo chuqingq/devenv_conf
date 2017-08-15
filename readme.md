@@ -34,9 +34,9 @@ http://linuxbrew.sh/
 
 ```
 # uninstall
-apt remove abiword gnumeric sylpheed transmission simple-scan pidgin
+sudo apt remove abiword gnumeric sylpheed transmission simple-scan pidgin
 # install
-apt install flashplugin-installer vlc libreoffice terminator
+sudo apt install flashplugin-installer vlc libreoffice terminator chromium-browser
 ```
 
 ## flash
