@@ -126,3 +126,19 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export PATH=$PATH:/opt/iojs-v2.3.3-linux-x64/bin:~/bin
 
 export LD_LIBRARY_PATH=/home/chuqq/bin/libuv/lib:$LD_LIBRARY_PATH
+
+#------------------------------------------------------------------------
+
+## chuqq
+
+# linuxbrew
+PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
+
+# golang
+export PATH=$PATH:/home/linuxbrew/.linuxbrew/opt/go/libexec/bin
+export GOPATH=/home/chuqq/gopath
+
