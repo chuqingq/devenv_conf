@@ -69,4 +69,8 @@ sudo apt remove fcitx-module-kimpanel
 sudo reboot
 ```
 
+## 安装autossh
+
+拷贝autossh到$GOPATH/bin/autossh
+编辑~/.autosshrc
 
