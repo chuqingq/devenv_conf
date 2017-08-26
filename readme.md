@@ -72,5 +72,6 @@ sudo reboot
 ## 安装autossh
 
 拷贝autossh到$GOPATH/bin/autossh
+apt install expect
 编辑~/.autosshrc
 
