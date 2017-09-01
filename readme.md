@@ -80,3 +80,6 @@ apt install expect
 http://pinyin.sogou.com/linux/
 直接安装64位deb包，注销即可。
 
+## 网易云音乐
+
+http://music.163.com/#/download
