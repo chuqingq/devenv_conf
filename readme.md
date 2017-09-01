@@ -75,3 +75,8 @@ sudo reboot
 apt install expect
 编辑~/.autosshrc
 
+## 安装linux搜狗输入法
+
+http://pinyin.sogou.com/linux/
+直接安装64位deb包，注销即可。
+
