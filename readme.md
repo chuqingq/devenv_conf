@@ -14,20 +14,18 @@ https://mirrors.aliyun.com/ubuntu/
 https://mirrors.aliyun.com/help/ubuntu
 ```
 
-apt install softwares:
-
-```
-jdk
-gcc
-nodejs
-golang
-mongodb
-```
-
 ## install linuxbrew
 
 ```
 http://linuxbrew.sh/
+```
+
+通过brew安装：
+```
+jdk
+nodejs
+golang
+mongodb
 ```
 
 ## software
@@ -83,3 +81,8 @@ http://pinyin.sogou.com/linux/
 ## 网易云音乐
 
 http://music.163.com/#/download
+
+## sublimetext
+
+http://www.sublimetext.com/docs/3/linux_repositories.html
+
