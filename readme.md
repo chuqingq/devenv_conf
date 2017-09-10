@@ -34,20 +34,8 @@ mongodb
 # uninstall
 sudo apt remove abiword gnumeric sylpheed transmission simple-scan pidgin
 # install
-sudo apt install flashplugin-installer vlc libreoffice terminator chromium-browser catfish
-```
-
-zeal
-```
-$ sudo add-apt-repository ppa:zeal-developers/ppa
-$ sudo apt-get update
-$ sudo apt-get install zeal
-```
-
-## flash
-
-```
-sudo apt install pepperflashplugin-nonfree
+sudo apt install vlc libreoffice terminator chromium-browser catfish zeal pepperflashplugin-nonfree
+# install flashlplugin
 sudo update-pepperflashplugin-nonfree --install
 ```
 
