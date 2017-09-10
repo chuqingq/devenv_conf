@@ -66,6 +66,9 @@ apt install expect
 http://pinyin.sogou.com/linux/
 直接安装64位deb包，注销即可。
 
+卸载不用的输入法：
+sudo apt remove fcitx-pinyin fcitx-sunpinyin fcitx-table
+
 ## 网易云音乐
 
 http://music.163.com/#/download
