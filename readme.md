@@ -74,3 +74,7 @@ http://music.163.com/#/download
 
 http://www.sublimetext.com/docs/3/linux_repositories.html
 
+## vscode
+
+https://code.visualstudio.com/Download
+
