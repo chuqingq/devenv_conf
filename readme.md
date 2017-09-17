@@ -34,7 +34,7 @@ mongodb
 # uninstall
 sudo apt remove abiword gnumeric sylpheed transmission simple-scan pidgin
 # install
-sudo apt install vlc libreoffice terminator chromium-browser catfish zeal pepperflashplugin-nonfree
+sudo apt install vlc libreoffice terminator chromium-browser catfish zeal pepperflashplugin-nonfree meld
 # install flashlplugin
 sudo update-pepperflashplugin-nonfree --install
 ```
