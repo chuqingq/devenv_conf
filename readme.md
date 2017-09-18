@@ -81,5 +81,9 @@ http://www.sublimetext.com/docs/3/linux_repositories.html
 
 https://code.visualstudio.com/Download
 
+# openresty
+
+http://openresty.org/en/linux-packages.html
+
 ## TODO hosts
 
