@@ -1,0 +1,10 @@
+# 设置合上盖子不灭屏
+
+/etc/systemd/login.sh
+
+HandleLidSwitch-ignore
+
+# 执行xrandr把主显示器关掉
+
+xrandr --output LVDS-1 --off
+
