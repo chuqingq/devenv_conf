@@ -14,20 +14,18 @@ https://mirrors.aliyun.com/ubuntu/
 https://mirrors.aliyun.com/help/ubuntu
 ```
 
-apt install softwares:
-
-```
-jdk
-gcc
-nodejs
-golang
-mongodb
-```
-
 ## install linuxbrew
 
 ```
 http://linuxbrew.sh/
+```
+
+通过brew安装：
+```
+jdk
+nodejs
+golang
+mongodb
 ```
 
 ## software
@@ -36,20 +34,8 @@ http://linuxbrew.sh/
 # uninstall
 sudo apt remove abiword gnumeric sylpheed transmission simple-scan pidgin
 # install
-sudo apt install flashplugin-installer vlc libreoffice terminator chromium-browser catfish
-```
-
-zeal
-```
-$ sudo add-apt-repository ppa:zeal-developers/ppa
-$ sudo apt-get update
-$ sudo apt-get install zeal
-```
-
-## flash
-
-```
-sudo apt install pepperflashplugin-nonfree
+sudo apt install vlc libreoffice terminator chromium-browser catfish zeal pepperflashplugin-nonfree meld
+# install flashlplugin
 sudo update-pepperflashplugin-nonfree --install
 ```
 
@@ -80,6 +66,24 @@ apt install expect
 http://pinyin.sogou.com/linux/
 直接安装64位deb包，注销即可。
 
+卸载不用的输入法：
+sudo apt remove fcitx-pinyin fcitx-sunpinyin fcitx-table
+
 ## 网易云音乐
 
 http://music.163.com/#/download
+
+## sublimetext
+
+http://www.sublimetext.com/docs/3/linux_repositories.html
+
+## vscode
+
+https://code.visualstudio.com/Download
+
+# openresty
+
+http://openresty.org/en/linux-packages.html
+
+## TODO hosts
+
