@@ -1,0 +1,18 @@
+# 解决~变成其它符号的问题
+
+```
+sudo su -
+echo 0 > /sys/module/hid_apple/parameters/iso_layout
+
+# 可以简化成这样
+echo 0 | sudo tee /sys/module/hid_apple/parameters/iso_layout
+```
+
+# 默认开启FN功能键
+
+$ echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode
+
+# 调整屏幕亮度（没用了）
+
+https://segmentfault.com/a/1190000005152754
+
