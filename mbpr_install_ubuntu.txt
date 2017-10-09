@@ -1,4 +1,5 @@
 https://linux.cn/article-3245-1.html
+https://help.ubuntu.com/community/MacBookPro12-1/Wily
 
 # 下载ubuntu，并写入优盘
 
