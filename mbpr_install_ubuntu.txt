@@ -63,7 +63,4 @@ echo 0 | sudo tee /sys/module/hid_apple/parameters/iso_layout
 
 $ echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode
 
-# 调整屏幕亮度（没用了）
-
-https://segmentfault.com/a/1190000005152754
 
