@@ -64,4 +64,36 @@ echo 0 | sudo tee /sys/module/hid_apple/parameters/iso_layout
 
 $ echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode
 
+# source code pro
+
+Step1.下载字体
+
+推荐GitHub上面的项目主页上下载 Source Code Pro
+
+我选择下载最后更新的版本
+
+Step2.解压
+
+使用
+
+$unzip SourceCodePro_FontsOnly-1.013.zip
+会生成一个SourceCodePro_FontsOnly-1.013的目录
+
+Step3.copy到.otf文件
+
+复制SourceCodePro_FontsOnly-1.013/OTF目录中的所有.otf文件到~/.fonts目录下，
+
+再执行命令
+
+$fc-cache -f -v
+在终端中使用Source Code Pro 字体
+
+修改Terminal（终端）中的字体为Source Code Pro，打开终端-》编辑-》配置文件首选项-》常规-》取消勾选’使用系统的等宽字体’-》选择Source Code Pro-》确定
+
+在SublimeText 2中使用Source Code Pro字体
+
+Preference-》Settings-user，在打开的文件中添加
+
+"font_face": "Source Code Pro"
+
 
