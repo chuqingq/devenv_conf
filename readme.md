@@ -87,3 +87,13 @@ http://openresty.org/en/linux-packages.html
 
 ## TODO hosts
 
+# 卸载lubuntu相关
+
+sudo apt remove lubuntu*
+
+# 安装lxde
+
+
+sudo apt install lxde-core lxde-common lxdm
+sudo dpkg-reconfigure lxdm
+
