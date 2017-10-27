@@ -93,7 +93,18 @@ sudo apt remove lubuntu*
 
 # 安装lxde
 
-
 sudo apt install lxde-core lxde-common lxdm
 sudo dpkg-reconfigure lxdm
+替换lxde-rc.xml
+
+# 安装source-code-pro字体
+
+下载地址：`https://github.com/adobe-fonts/source-code-pro/downloads`
+安卓步骤：`http://blog.csdn.net/android_hasen/article/details/50523013`
+
+    unzip SourceCodePro_FontsOnly-1.013.zip
+    mkdir ~/.fonts
+    cp SourceCodePro_FontsOnly-1.013/OTF/* ~/.fonts/
+    fc-cache -fv
+
 
