@@ -95,12 +95,13 @@ sudo apt remove lubuntu*
 
 sudo apt install lxde-core lxde-common lxdm
 sudo dpkg-reconfigure lxdm
-替换lxde-rc.xml
+cp lxde-rc.xml ~/.config/openbox/lxde-rc.xml
+openbox --reconfigure # 让配置生效
 
 # 安装source-code-pro字体
 
 下载地址：`https://github.com/adobe-fonts/source-code-pro/downloads`
-安卓步骤：`http://blog.csdn.net/android_hasen/article/details/50523013`
+安装步骤：`http://blog.csdn.net/android_hasen/article/details/50523013`
 
     unzip SourceCodePro_FontsOnly-1.013.zip
     mkdir ~/.fonts
@@ -110,12 +111,13 @@ sudo dpkg-reconfigure lxdm
 # 使用fish
 
     sudo apt install fish
-    sudo vi /etc/password
-    # /usr/bin/fish
+    chsh -s /usr/bin/fish
 
 # 安装autossh
 
     https://github.com/wufeifei/autossh
     sudo apt install expect
-    cd ~/gopath && wget https://raw.githubusercontent.com/wufeifei/autossh/master/autossh && chmod a+x autossh
+    cd ~/gopath/bin
+    wget https://raw.githubusercontent.com/wufeifei/autossh/master/autossh
+    chmod a+x autossh
 
