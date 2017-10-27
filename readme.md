@@ -113,4 +113,9 @@ sudo dpkg-reconfigure lxdm
     sudo vi /etc/password
     # /usr/bin/fish
 
+# 安装autossh
+
+    https://github.com/wufeifei/autossh
+    sudo apt install expect
+    cd ~/gopath && wget https://raw.githubusercontent.com/wufeifei/autossh/master/autossh && chmod a+x autossh
 
