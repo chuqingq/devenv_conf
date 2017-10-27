@@ -107,4 +107,10 @@ sudo dpkg-reconfigure lxdm
     cp SourceCodePro_FontsOnly-1.013/OTF/* ~/.fonts/
     fc-cache -fv
 
+# 使用fish
+
+    sudo apt install fish
+    sudo vi /etc/password
+    # /usr/bin/fish
+
 
