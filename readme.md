@@ -18,6 +18,7 @@
 
 ## 安装方案3：ubuntuserver+lxde
 
+    https://help.ubuntu.com/community/Installation/MinimalCD/
     sudo apt install lxde-core lxdm xserver-xorg # lxdm可以换为lightdm
 
 # 修改配置
