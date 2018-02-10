@@ -83,28 +83,6 @@
     xvid
     xz
 
-    $ brew cask list -1
-    alfred
-    android-studio
-    dash
-    eclipse-java
-    firefox
-    genymotion
-    google-chrome
-    iterm2
-    java
-    neteasemusic
-    qq
-    qqmusic
-    scroll-reverser
-    sizeup
-    sublime-text
-    teamviewer
-    textmate
-    the-unarchiver
-    virtualbox
-    vlc
-
 # 外接显示器注意事项
 
 * 不支持无源的hdmi转vga
