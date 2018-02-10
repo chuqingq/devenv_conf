@@ -14,6 +14,30 @@
 
     export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$ANDROID_HOME/platform-tools
 
+# brew cask
+
+    $ brew cask list -1
+    alfred
+    android-studio
+    dash
+    eclipse-java
+    firefox
+    genymotion
+    google-chrome
+    iterm2
+    java
+    neteasemusic
+    qq
+    qqmusic
+    scroll-reverser
+    spectacle
+    sublime-text
+    teamviewer
+    textmate
+    the-unarchiver
+    virtualbox
+    vlc
+
 # brew
 
     $ brew list -1
