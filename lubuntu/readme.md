@@ -2,14 +2,19 @@
 
 ## 安装方案1：deepin
 
-* 安装“深度商店”，安装“深度显卡驱动管理器”，设置使用开源驱动
-* 控制中心（可以不改）
-    * 主题：deepin-dark
-    * 光标主题：adwaita
+* driver
+    * 我这台电脑需要使用开源驱动，否则启动时没有图形界面。
+    * 恢复方法：安装xserver-xorg-video-nouveau，卸载nvidia-legacy-340xx-driver。
 * panel
     * 模式：高效模式
     * 位置：左
     * 大小：小
+* 深度商店
+    * terminator
+    * sublime text 3
+    * visual studio code
+    * virtualbox
+    * 迅雷急速版
 
 ## 安装方案2：lubuntu-lubuntu*+lxde
 
