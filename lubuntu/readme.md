@@ -11,12 +11,12 @@
     * 大小：小
 * 深度商店
     * terminator
-    * sublime text 3
+    * sublime text 3（需要使用DejaVu Sans Mono字体，否则中文对不齐）
     * visual studio code
     * virtualbox
     * 迅雷急速版
 
-## 安装方案2：lubuntu-lubuntu*+lxde
+## 安装方案2：lubuntu-lubuntu+lxde
 
     sudo apt remove lubuntu*
     sudo apt install lxde-core # lxde-common lxdm
