@@ -15,6 +15,9 @@
     * visual studio code
     * virtualbox
     * 迅雷急速版
+* 控制中心
+    * qdbus com.deepin.wm  /com/deepin/wm com.deepin.wm.TileActiveWindow 1 左平铺
+    * qdbus com.deepin.wm  /com/deepin/wm com.deepin.wm.TileActiveWindow 2 右平铺
 
 ## 安装方案2：lubuntu-lubuntu+lxde
 
