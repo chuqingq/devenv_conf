@@ -1,23 +1,29 @@
-Mac 挂载NTFS移动硬盘进行读写操作 Readonly file system
+#!/bin/bash
 
-1. diskutil info /Volumes/YOUR_NTFS_DISK_NAME 
+# 1.展示出NTFS的所有磁盘
+diskutil list | grep NTFS
 
-找到 Device Node
+# 2.用户输入磁盘label
+read -p "please input device name: "
+DEVICE_NAME=$REPLY
 
-Device Node:              /dev/disk1s1
+# 3.用户输入磁盘信息
+read -p "please input device node: "
+DEVICE_NODE=$REPLY
 
-2. hdiutil eject /Volumes/YOUR_NTFS_DISK_NAME
+# 4.卸载磁盘
+sudo diskutil unmount /Volumes/$DEVICE_NAME
 
-"disk1" unmounted.
-"disk1" ejected.
+# 5.创建挂载目录
+sudo mkdir /Volumes/$DEVICE_NAME
 
-弹出你的硬盘
+# 6.挂载磁盘
+sudo mount -t ntfs -o rw,auto,nobrowse /dev/$DEVICE_NODE /Volumes/$DEVICE_NAME
 
-3. 创建一个目录，稍后将mount到这个目录 
+# 7.卸载磁盘
+echo "if you want to unmount disk, please input: "
+echo "sudo diskutil unmount /Volumes/$DEVICE_NAME"
+# 或者在Volumes中右键，推出磁盘xxx
 
-sudo mkdir /Volumes/MYHD
-
-4. 将NTFS硬盘 挂载 mount 到mac
-
-sudo mount_ntfs -o rw,nobrowse /dev/disk1s1 /Volumes/MYHD/
-
+# 或者在/etc/fstab中增加一行：
+# LABEL=chuqq1t none ntfs rw,nobrowse,noowners,noatime,nosuid
