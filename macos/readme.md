@@ -1,7 +1,9 @@
 # .profile
 
     $ cat ~/.profile
-    export GOROOT=/usr/local/Cellar/go/1.9.2/libexec
+    export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+
+    # export GOROOT=/usr/local/Cellar/go/1.9.2/libexec
     export GOPATH=$HOME/gopath
 
     export JAVA_HOME=`/usr/libexec/java_home`
