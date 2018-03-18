@@ -19,9 +19,9 @@
 # brew cask
 
     $ brew cask list -1
-    alfred
+    # alfred # use spotlight instead
     android-studio
-    dash
+    # dash # use devdocs.io instead
     eclipse-java
     firefox
     genymotion
@@ -39,6 +39,7 @@
     the-unarchiver
     virtualbox
     vlc
+    microsoft-office # refer to 激活工具.dmg @pan.baidu.com
 
 # brew
 
