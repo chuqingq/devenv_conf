@@ -31,7 +31,7 @@
     neteasemusic
     qq
     qqmusic
-    scroll-reverser
+    mos # 代替scroll-reverser或smooth scroll的
     spectacle
     sublime-text
     teamviewer
