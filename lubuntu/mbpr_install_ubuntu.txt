@@ -52,6 +52,8 @@ sudo update-grub
 
 # 解决~变成其它符号的问题
 
+* 修改macbookpro的键盘映射：https://github.com/free5lot/hid-apple-patched
+
 ```
 sudo su -
 echo 0 > /sys/module/hid_apple/parameters/iso_layout
