@@ -29,6 +29,14 @@
     https://help.ubuntu.com/community/Installation/MinimalCD/
     sudo apt install lxde-core lxdm xserver-xorg # lxdm可以换为lightdm
 
+## 安装方案4：linuxmint
+
+    sudo apt-get install language-pack-zh-hans # 中文
+    安装terminator、wine
+    软件管理器安装sublimetext、meld等
+    下载安装网易云音乐、搜狗输入法、wps、
+    
+
 # 修改配置
 
 ## 修改源
