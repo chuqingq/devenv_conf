@@ -1,0 +1,7 @@
+[user]
+	email = chuqingq@qq.com
+	name = chuqq
+[push]
+	default = simple
+[credential]
+    helper = store
