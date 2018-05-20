@@ -31,6 +31,10 @@
 
 # office
 
+    brew cask install microsoft-office
+
+然后用激活工具激活。
+
 # gdb
 
 * 先安装8.0.1（8.1版本有bug）。
