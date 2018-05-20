@@ -1,3 +1,39 @@
+# 重装系统
+
+（shift+）cmd+r
+
+先用DiskUtility工具把磁盘抹掉，然后reinstall os。
+
+# 设置机器名
+
+系统偏好设置->共享，机器名设置为chuqq-mac。
+
+# 安装搜狗输入法
+
+从官方网站下载dmg安装。系统偏好设置->语言和地区，需要选择中国。
+
+系统偏好设置->键盘，输入法中只保留ABC和搜狗拼音。
+
+# ntfs
+    sudo ntfsx
+ 如果是之前已经挂载过的，就会自动被挂载为可写。
+
+# office
+# gdb
+
+# 设置键盘
+
+* 按键重复：快
+* 重复前延迟：短
+
+# virtualbox+ubuntu
+
+* 菜单：Device->Insert Guest Additions CD image
+* 在虚机中打开光盘，执行./VBox\*.run
+* 创建work和temp目录，并创建mount.sh脚本，每次新登录时执行即可。
+    sudo mount -t vboxsf work /home/chuqq/work
+    sudo mount -t vboxsf temp /home/chuqq/temp
+
 # .profile
 
     $ cat ~/.profile
