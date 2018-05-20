@@ -14,25 +14,69 @@
 
 系统偏好设置->键盘，输入法中只保留ABC和搜狗拼音。
 
-# ntfs
-    sudo ntfsx
- 如果是之前已经挂载过的，就会自动被挂载为可写。
-
-# office
-# gdb
-
 # 设置键盘
 
 * 按键重复：快
 * 重复前延迟：短
+
+# 安装xcode相关工具
+
+    xcode-select --install
+
+# ntfs
+    sudo ntfsx
+ 如果是之前已经挂载过的，就会自动被挂载为可写。
+
+# 修改hosts
+
+# office
+
+# gdb
+
+* 先安装8.0.1（8.1版本有bug）。
+
+（brew switch formula version 好像只用来卸载，无法用来安装）
+
+https://www.jianshu.com/p/aadb54eac0a8
+
+```
+git clone https://github.com/Homebrew/homebrew-core/
+git log ./Formula/gdb.rb | less
+git checkout c3128a5c335bd2fa75ffba9d721e9910134e4644
+```
+* 然后按照`https://sourceware.org/gdb/wiki/BuildingOnDarwin`的2.1节codesign。
+
+```
+gdb requires special privileges to access Mach ports.
+You will need to codesign the binary. For instructions, see:
+
+  https://sourceware.org/gdb/wiki/BuildingOnDarwin
+
+On 10.12 (Sierra) or later with SIP, you need to run this:
+
+  echo "set startup-with-shell off" >> ~/.gdbinit
+```
+
+调试时使用：
+
+    g++ -g test.cpp
+    sudo gdb ./a.out
+
 
 # virtualbox+ubuntu
 
 * 菜单：Device->Insert Guest Additions CD image
 * 在虚机中打开光盘，执行./VBox\*.run
 * 创建work和temp目录，并创建mount.sh脚本，每次新登录时执行即可。
+
+命令：
+
     sudo mount -t vboxsf work /home/chuqq/work
     sudo mount -t vboxsf temp /home/chuqq/temp
+
+# cnpm
+
+    npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 # .profile
 
