@@ -105,6 +105,7 @@ On 10.12 (Sierra) or later with SIP, you need to run this:
     $ brew cask list -1
     # alfred # use spotlight instead
     android-studio
+    android-file-transfer
     # dash # use devdocs.io instead
     eclipse-java
     firefox
