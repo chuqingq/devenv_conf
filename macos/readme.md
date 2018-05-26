@@ -110,6 +110,7 @@ On 10.12 (Sierra) or later with SIP, you need to run this:
     android-studio
     android-file-transfer
     # dash # use devdocs.io instead
+    dd-utility # instead of `dd`
     eclipse-java
     firefox
     genymotion
