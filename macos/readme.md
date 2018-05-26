@@ -24,6 +24,9 @@
     xcode-select --install
 
 # ntfs
+
+https://github.com/naingyeminn/ntfsx
+
     sudo ntfsx
  如果是之前已经挂载过的，就会自动被挂载为可写。
 
