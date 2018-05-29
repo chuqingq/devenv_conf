@@ -8,6 +8,10 @@
 
 右下角软件更新
 
+## install mint-codecs
+
+welcome -> install mint-codecs
+
 ## 配置语言和输入法
 
     系统设置->语言设置：chinese，china，应用到整个系统
@@ -15,27 +19,21 @@
     下载搜狗输入法并安装
     Fcitx配置：保留Keyboard-Chinese和搜狗拼音两种输入法即可。
     
+sougou input fonts: 32
+
 如果字体小（例如在2K屏上），可以整体放大：设置->字体->字体设置->文本缩放比例，改成1.1或1.2即可。
 
 ## 安装所需软件
 
-sudo apt-get install terminator wine golang-go perf vim python3 python3-pip eclipse
+sudo apt install vim g++ gdb make git fish
 
 ## 软件管理器（mintinstall）安装
 
-sublimetext、meld、vscode等
+sublimetext、meld、vscode, cheese, 等
 
 ## 安装私有软件
 
 下载安装网易云音乐、wps（黑色主题不如libreoffice）
-
-## 安装autossh
-
-    https://github.com/wufeifei/autossh
-    sudo apt install expect
-    cd ~/gopath/bin
-    wget https://raw.githubusercontent.com/wufeifei/autossh/master/autossh
-    chmod a+x autossh
 
 ## 安装jdk
 
