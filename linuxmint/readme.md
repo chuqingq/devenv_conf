@@ -35,6 +35,42 @@ sublimetext、meld、vscode, cheese, 等
 
 下载安装网易云音乐、wps（黑色主题不如libreoffice）
 
+# python3安装
+
+http://mirrors.ustc.edu.cn/help/pypi.html
+
+    cat $HOME/.config/pip/pip.conf
+    [global]
+    index-url = https://mirrors.ustc.edu.cn/pypi/web/simple
+    format = columns
+
+    sudo apt install python3-pip python3-setuptools
+    pip3 install tornado
+
+# golang安装
+
+https://studygolang.com/dl
+
+    cat $HOME/.profile
+    # chuqq
+    export GOROOT=/mnt/work/bin/go
+    export PATH=$PATH:$GOROOT/bin
+
+# 调整mac键位
+
+https://github.com/free5lot/hid-apple-patched
+
+然后用dkms安装，再修改配置文件，让配置文件生效。
+
+# 网易云音乐下载
+
+https://music.163.com/#/download
+
+# 搜狗linux输入法
+
+https://pinyin.sogou.com/linux/?r=pinyin
+
+
 ## 安装jdk
 
 ### lubuntu安装jdk
