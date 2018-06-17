@@ -60,7 +60,9 @@ https://studygolang.com/dl
 
 https://github.com/free5lot/hid-apple-patched
 
-然后用dkms安装，再修改配置文件，让配置文件生效。
+* 然后用dkms安装;
+* 再修改配置文件（包括左上角～符号）：cp hid_apple.conf /etc/modprobe.d/
+* 让配置文件生效：
 
 # 网易云音乐下载
 
