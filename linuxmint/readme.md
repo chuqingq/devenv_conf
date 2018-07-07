@@ -82,3 +82,11 @@ https://pinyin.sogou.com/linux/?r=pinyin
     export JAVA_HOME=/opt/jdk1.7.0_75
     export JRE_HOME=${JAVA_HOME}/jre
     export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+
+## 安装redis、mongodb等
+
+    sudo apt install redis mongodb
+    # 停止自启动
+    sudo update-rc.d redis-server disable
+    sudo update-rc.d mongodb disable
+
