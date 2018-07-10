@@ -85,9 +85,14 @@ https://pinyin.sogou.com/linux/?r=pinyin
 
 ## 设置笔记本合上盖子外接显示器能用
 
-```
-vim /etc/systemd/logind.conf
-```
+    vim /etc/systemd/logind.conf
 
 将HandleLidSwitchDocked 改为 ignore，然后删掉前面的 # 号
+
+## 安装redis、mongodb等
+
+    sudo apt install redis mongodb
+    # 停止自启动
+    sudo update-rc.d redis-server disable
+    sudo update-rc.d mongodb disable
 
