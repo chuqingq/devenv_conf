@@ -82,3 +82,12 @@ https://pinyin.sogou.com/linux/?r=pinyin
     export JAVA_HOME=/opt/jdk1.7.0_75
     export JRE_HOME=${JAVA_HOME}/jre
     export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+
+## 设置笔记本合上盖子外接显示器能用
+
+```
+vim /etc/systemd/logind.conf
+```
+
+将HandleLidSwitchDocked 改为 ignore，然后删掉前面的 # 号
+
