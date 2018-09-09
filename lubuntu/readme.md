@@ -1,6 +1,29 @@
 # 安装系统
 
-## 安装方案1：deepin
+## 安装方案：linuxmint
+
+    sudo apt-get install language-pack-zh-hans # 中文
+    安装terminator、wine
+    软件管理器安装sublimetext、meld等
+    下载安装网易云音乐、搜狗输入法、wps、
+    安装mint-codecs：welcome -> install mint-codecs
+
+## 安装：ubuntu
+
+    修改为ustc和aliyun，然后更新缓存
+    sougou input fonts: 32
+    如果字体小（例如在2K屏上），可以整体放大：设置->字体->字体设置->文本缩放比例，改成1.1或1.2即可。
+
+## 配置语言和输入法
+
+    系统设置->语言设置：chinese，china，应用到整个系统
+    输入法：简体中文->安装，然后sudo apt remove fonts-arphic-ukai fonts-arphic-uming
+    下载搜狗输入法并安装
+    Fcitx配置：保留Keyboard-Chinese和搜狗拼音两种输入法即可。
+    https://pinyin.sogou.com/linux/?r=pinyin
+
+
+## 安装方案：deepin
 
 * driver
     * 我这台电脑需要使用开源驱动，否则启动时没有图形界面。
@@ -19,32 +42,13 @@
     * qdbus com.deepin.wm  /com/deepin/wm com.deepin.wm.TileActiveWindow 1 左平铺
     * qdbus com.deepin.wm  /com/deepin/wm com.deepin.wm.TileActiveWindow 2 右平铺
 
-## 安装方案2：lubuntu-lubuntu+lxde
+## 安装方案：lubuntu-lubuntu+lxde
 
     sudo apt remove lubuntu*
     sudo apt install lxde-core # lxde-common lxdm
 
-## 安装方案3：ubuntuserver+lxde
 
-    https://help.ubuntu.com/community/Installation/MinimalCD/
-    sudo apt install lxde-core lxdm xserver-xorg # lxdm可以换为lightdm
-
-## 安装方案4：linuxmint
-
-    sudo apt-get install language-pack-zh-hans # 中文
-    安装terminator、wine
-    软件管理器安装sublimetext、meld等
-    下载安装网易云音乐、搜狗输入法、wps、
-    
-
-# 修改配置
-
-## 修改源
-
-    http://mirrors.aliyun.com
-    /etc/apt/sources.list
-
-## 配置
+### 配置
 
     lxde: .config/openbox/lxde-rc.xml # TODO
     lubuntu: .config/openbox/lubuntu-rc.xml
@@ -55,7 +59,7 @@
     sudo dpkg-reconfigure lxdm # 配置登录管理器
     openbox --reconfigure # 让配置生效
 
-### lubuntu-rc.xml快捷键
+#### lubuntu-rc.xml快捷键
 
 默认的Win+r快捷键不生效。因为lxsession默认应用launcher_manager设置为lxpanelctl，而应该是lxpanelctl run。可能lxsession默认应用不支持命令中有空格，因此直接修改openbox的快捷键的配置：
 
@@ -107,7 +111,7 @@
 
 然后用openbox --reconfigure使之生效
 
-### lxpanel配置
+#### lxpanel配置
 
 窗口栏只展示图标，不展示文字（占地方）
 
@@ -142,6 +146,20 @@
     }
 
 
+## 安装方案：ubuntuserver+lxde
+
+    https://help.ubuntu.com/community/Installation/MinimalCD/
+    sudo apt install lxde-core lxdm xserver-xorg # lxdm可以换为lightdm
+
+
+# 修改配置
+
+## 修改源
+
+    http://mirrors.ustc.edu.cn/
+    /etc/apt/sources.list
+
+
 ## 安装linuxbrew
 
     http://linuxbrew.sh/
@@ -155,11 +173,12 @@
 
     # 卸载掉无用的软件
     sudo apt remove abiword gnumeric sylpheed transmission simple-scan pidgin
-    # 安装
-    sudo apt install vlc libreoffice terminator chromium-browser catfish zeal pepperflashplugin-nonfree meld
-    # install flashlplugin
-    sudo update-pepperflashplugin-nonfree --install
-
+    # 开发相关
+    sudo apt install vim g++ gdb make git fish vlc terminator chromium-browser catfish zeal meld
+    # 办公
+    sudo apt install libreoffice
+    # mintinstall
+    sublimetext、meld、vscode, cheese, 等
 
 ## chrome
 
@@ -174,8 +193,11 @@
 
 ### chromium+flash
 
-    sudo apt-get update sudo apt-get install chromium-browser sudo apt-get install pepperflashplugin-nonfree sudo update-pepperflashplugin-nonfree --install 卸载命令：
-
+    sudo apt-get update
+    sudo apt-get install chromium-browser
+    sudo apt-get install pepperflashplugin-nonfree
+    sudo update-pepperflashplugin-nonfree --install
+    卸载命令：
     sudo apt-get remove chromium-browser pepperflashplugin-nonfree
 
 ## 输入法
@@ -247,7 +269,7 @@
     wget https://raw.githubusercontent.com/wufeifei/autossh/master/autossh
     chmod a+x autossh
 
-## 安装jdk
+## jdk
 
 ### lubuntu安装jdk
 
@@ -287,7 +309,7 @@
         Categories=Development;IDE;
         Name[en]=Eclipse
 
-# ss
+## ss
 
 安装
 
@@ -306,3 +328,50 @@
 
     # 停止
     killall sslocal
+
+## python3安装
+
+http://mirrors.ustc.edu.cn/help/pypi.html
+
+    cat $HOME/.config/pip/pip.conf
+    [global]
+    index-url = https://mirrors.ustc.edu.cn/pypi/web/simple
+    format = columns
+
+    sudo apt install python3-pip python3-setuptools
+    pip3 install tornado
+
+## golang安装
+
+https://studygolang.com/dl
+
+    cat $HOME/.profile
+    # chuqq
+    export GOROOT=/mnt/work/bin/go
+    export PATH=$PATH:$GOROOT/bin
+
+
+## 安装redis、mongodb等
+
+    sudo apt install redis mongodb
+    # 停止自启动
+    sudo update-rc.d redis-server disable
+    sudo update-rc.d mongodb disable
+
+
+
+# mac设置
+
+## 调整mac键位
+
+https://github.com/free5lot/hid-apple-patched
+
+* 然后用dkms安装;
+* 再修改配置文件（包括左上角～符号）：cp hid_apple.conf /etc/modprobe.d/
+* 让配置文件生效：
+
+## 设置笔记本合上盖子外接显示器能用
+
+    vim /etc/systemd/logind.conf
+
+将HandleLidSwitchDocked 改为 ignore，然后删掉前面的 # 号
