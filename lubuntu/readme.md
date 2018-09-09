@@ -286,3 +286,16 @@
         NoDisplay=false
         Categories=Development;IDE;
         Name[en]=Eclipse
+
+# ss
+
+    # 安装
+    apt-get install python-pip
+    sudo apt install libsodium-dev
+    sudo pip install https://github.com/shadowsocks/shadowsocks/archive/master.zip -U
+
+    # 启动
+    nohup sslocal -s <server> -p <port> -l 1080 -k <password> -m <method> >ss.log 2>1 &
+
+    # 停止
+    killall sslocal
