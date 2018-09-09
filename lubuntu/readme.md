@@ -289,10 +289,17 @@
 
 # ss
 
-    # 安装
+安装
+
     apt-get install python-pip
     sudo apt install libsodium-dev
     sudo pip install https://github.com/shadowsocks/shadowsocks/archive/master.zip -U
+
+安装浏览器插件
+
+    https://github.com/FelisCatus/SwitchyOmega/releases
+
+设置socks5,127.0.0.1,1080.
 
     # 启动
     nohup sslocal -s <server> -p <port> -l 1080 -k <password> -m <method> >ss.log 2>1 &
