@@ -197,9 +197,10 @@ On 10.12 (Sierra) or later with SIP, you need to run this:
 </mirror>
 ```
 
-然后创建项目：
+* 然后创建项目：
 
 ```
 mvn archetype:generate -DgroupId=chuqq.groupid -DartifactId=chuqq.artifactid -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 ```
 
+* vscode打开，然后就可以用F5进行调试，Ctrl+F5运行
