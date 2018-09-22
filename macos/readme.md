@@ -188,14 +188,18 @@ On 10.12 (Sierra) or later with SIP, you need to run this:
     * /usr/local/Cellar/maven/3.5.4/libexec/conf
     * vim settings.xml
 
-    <mirror>
-        <id>alimaven</id>
-        <mirrorOf>central</mirrorOf>
-        <name>aliyun maven</name>
-        <url>https://maven.aliyun.com/repository/public</url>
-    </mirror>
+```
+<mirror>
+    <id>alimaven</id>
+    <mirrorOf>central</mirrorOf>
+    <name>aliyun maven</name>
+    <url>https://maven.aliyun.com/repository/public</url>
+</mirror>
+```
 
 然后创建项目：
 
-    mvn archetype:generate -DgroupId=chuqq.groupid -DartifactId=chuqq.artifactid -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+```
+mvn archetype:generate -DgroupId=chuqq.groupid -DartifactId=chuqq.artifactid -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+```
 
