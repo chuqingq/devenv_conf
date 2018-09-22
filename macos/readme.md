@@ -179,3 +179,23 @@ On 10.12 (Sierra) or later with SIP, you need to run this:
 
 * 不支持无源的hdmi转vga
 * 用tb转vga时，可以这个顺序：笔记本合上盖子、接电源、接tb线、接键盘鼠标，然后点击键盘唤醒电脑
+
+# java环境
+
+* vscode安装java相关插件
+* brew install maven
+* 修改maven源：
+    * /usr/local/Cellar/maven/3.5.4/libexec/conf
+    * vim settings.xml
+
+    <mirror>
+        <id>alimaven</id>
+        <mirrorOf>central</mirrorOf>
+        <name>aliyun maven</name>
+        <url>https://maven.aliyun.com/repository/public</url>
+    </mirror>
+
+然后创建项目：
+
+    mvn archetype:generate -DgroupId=chuqq.groupid -DartifactId=chuqq.artifactid -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
