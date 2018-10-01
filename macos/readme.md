@@ -133,32 +133,26 @@ On 10.12 (Sierra) or later with SIP, you need to run this:
 # brew
 
     $ brew list -1
-    ant
+    cmake
     ctags
     dos2unix
     ffmpeg
     fish
     gdbm
-    geoip
-    gettext
     git
     go
     gradle
     htop
-    icu4c
     lame
     lrzsz
+    maven
     mongodb
     nmap
     node
     openresty
-    openresty-openssl
-    openssl
-    openssl@1.1
     pcre
     pcre2
     phantomjs
-    pkg-config
     portaudio
     postgresql
     python3
@@ -167,6 +161,7 @@ On 10.12 (Sierra) or later with SIP, you need to run this:
     scons
     sqlite
     tomcat
+    vim
     unrar
     watch
     wget
