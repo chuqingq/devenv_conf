@@ -380,12 +380,3 @@ https://github.com/free5lot/hid-apple-patched
     vim /etc/systemd/logind.conf
 
 将HandleLidSwitchDocked 改为 ignore，然后删掉前面的 # 号
-
-
-# 网易云音乐下载
-
-https://music.163.com/#/download
-
-# 搜狗linux输入法
-
-https://pinyin.sogou.com/linux/?r=pinyin

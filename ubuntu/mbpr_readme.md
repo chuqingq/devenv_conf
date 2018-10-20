@@ -50,6 +50,21 @@ sudo update-grub
 
 设置->外观->字体大小，调成32就差不多了。
 
+# 调整mac键位
+
+https://github.com/free5lot/hid-apple-patched
+
+* 然后用dkms安装;
+* 再修改配置文件（包括左上角～符号）：cp hid_apple.conf /etc/modprobe.d/
+* 让配置文件生效：
+
+# 设置笔记本合上盖子外接显示器能用
+
+    vim /etc/systemd/logind.conf
+
+将HandleLidSwitchDocked 改为 ignore，然后删掉前面的 # 号
+
+
 # 解决~变成其它符号的问题
 
 * 修改macbookpro的键盘映射：https://github.com/free5lot/hid-apple-patched
