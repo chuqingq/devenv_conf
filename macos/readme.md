@@ -159,6 +159,7 @@ On 10.12 (Sierra) or later with SIP, you need to run this:
     readline
     sbt
     scons
+    sox
     sqlite
     tomcat
     vim

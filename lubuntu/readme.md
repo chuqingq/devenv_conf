@@ -353,11 +353,16 @@ https://studygolang.com/dl
 
 ## 安装redis、mongodb等
 
-    sudo apt install redis mongodb
+    sudo apt install redis-server mongodb
     # 停止自启动
     sudo update-rc.d redis-server disable
     sudo update-rc.d mongodb disable
-
+    # 临时停止服务
+    sudo service redis-server stop // redis和redis-server都可以
+    mongodb ???
+    # 查询服务
+    service redis-server status // redis和redis-server都可以
+    mongodb ???
 
 
 # mac设置
