@@ -96,9 +96,6 @@ On 10.12 (Sierra) or later with SIP, you need to run this:
     sudo mount -t vboxsf work /home/chuqq/work
     sudo mount -t vboxsf temp /home/chuqq/temp
 
-# cnpm
-
-    npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 # .profile
 
