@@ -29,6 +29,8 @@
 
 https://github.com/Sailiy/ntfsx
 
+百度网盘。
+
 ## 方案2：ntfsx
 
 https://github.com/naingyeminn/ntfsx
@@ -40,9 +42,16 @@ https://github.com/naingyeminn/ntfsx
 
 # office
 
+## 方案1（推荐）：WPS
+
+## 方案2：微软office
     brew cask install microsoft-office
 
-然后用激活工具激活。
+然后用百度网盘激活工具激活。
+
+# 定时提醒：red hot timer
+
+appstore
 
 # gdb
 
