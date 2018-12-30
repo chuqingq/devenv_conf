@@ -156,7 +156,10 @@
 
 ## 修改源
 
-    http://mirrors.ustc.edu.cn/
+    命令：
+    sudo sed -i 's/cn.archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+    参考：
+    http://mirrors.ustc.edu.cn/help/ubuntu.html
     /etc/apt/sources.list
 
 
