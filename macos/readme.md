@@ -25,6 +25,12 @@
 
 # ntfs
 
+## 方案1（推荐）：ntfsx(on electron)
+
+https://github.com/Sailiy/ntfsx
+
+## 方案2：ntfsx
+
 https://github.com/naingyeminn/ntfsx
 
     sudo ntfsx
