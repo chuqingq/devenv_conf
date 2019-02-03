@@ -183,6 +183,10 @@ On 10.12 (Sierra) or later with SIP, you need to run this:
     xvid
     xz
 
+# 应用商店（app store）
+
+* red hot timer
+
 # 外接显示器注意事项
 
 * 不支持无源的hdmi转vga
