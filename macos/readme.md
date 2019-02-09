@@ -89,9 +89,17 @@ On 10.12 (Sierra) or later with SIP, you need to run this:
 
 * 菜单：Device->Insert Guest Additions CD image
 * 在虚机中打开光盘，执行./VBox\*.run
-* 创建work和temp目录，并创建mount.sh脚本，每次新登录时执行即可。
+* 如果是ubuntu-18.04，则界面会自动适应宿主机屏幕分辨率（例如高分屏），ubuntu-16.04不会；
+* virtualbox中设置共享文件夹：
+    * 共享文件夹路径：D:\work
+    * 共享文件夹名称：work
+    * 只读分配：否
+    * 挂载点：/home/chuqq/work
+    * 固定分配：是
+    * 效果：sudo su后，cd work就能看到宿主机的D:\work下的内容了。
+    * 下面的脚本暂时不需要
 
-命令：
+    命令：
 
     sudo mount -t vboxsf work /home/chuqq/work
     sudo mount -t vboxsf temp /home/chuqq/temp
