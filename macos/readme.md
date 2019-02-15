@@ -96,7 +96,8 @@ On 10.12 (Sierra) or later with SIP, you need to run this:
     * 只读分配：否
     * 挂载点：/home/chuqq/work
     * 固定分配：是
-    * 效果：sudo su后，cd work就能看到宿主机的D:\work下的内容了。
+    * 把用户加入到vboxsf群组：sudo adduser chuqq vboxsf
+    * 这样普通用户不用sudo su就可以读写共享文件夹了
     * 下面的脚本暂时不需要
 
     命令：
