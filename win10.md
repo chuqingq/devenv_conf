@@ -6,6 +6,12 @@
 - 安装后，用管理员权限运行autopico
 - 查看我的电脑、属性，windows已激活。
 
+## 安装ubuntu
+
+- 进入microsoft store，安装ubuntu-18.04
+- 进入“添加或删除程序”，打开开发者模式
+- 启动ubuntu-18.04
+
 ## 翻墙
 
 - 下载shadowsocks-chuqq.zip，并启动
