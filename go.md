@@ -56,3 +56,12 @@ export GOPATH=/Volumes/work/go
 export PATH=$PATH:$GOPATH/bin
 ```
 
+
+## golang安装（deprecated）
+
+https://studygolang.com/dl
+
+    cat $HOME/.profile
+    # chuqq
+    export GOROOT=/mnt/work/bin/go
+    export PATH=$PATH:$GOROOT/bin

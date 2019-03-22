@@ -272,46 +272,6 @@
     wget https://raw.githubusercontent.com/wufeifei/autossh/master/autossh
     chmod a+x autossh
 
-## jdk
-
-### lubuntu安装jdk
-
-先卸载无用的jdk.这样后面就不需要sudo update-alternatives --install ...了 到oracle官网下载jdk-7u75-linux-x64.tar.gz sudo tar zxvf jdk-7u75-linux-x64.tar.gz -C /opt/ 在.bashrc或profile中增加环境变量的设置
-
-    export JAVA_HOME=/opt/jdk1.7.0_75
-    export JRE_HOME=${JAVA_HOME}/jre
-    export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
-    export PATH=${JAVA_HOME}/bin:$PATH
-
-### centos安装jdk
-
-    rpm -qa | grep java
-    rpm -qa | grep jdk
-
-    # 把已有的安装包卸载掉
-
-    rpm -e --nodeps java-1.7.0-openjdk-1.7.0.45-2.4.3.3.el6.x86_64
-
-    # 安装新下的oracle的jdk
-
-    rpm -ivh jdk-7u75-linux-x64.rpm
-
-## lubuntu安装eclipse
-
-    wget -c http://mirror.hust.edu.cn/eclipse/technology/epp/downloads/release/luna/SR2/eclipse-jee-luna-SR2-linux-gtk-x86_64.tar.gz
-    sudo tar zxvf eclipse-jee-luna-SR2-linux-gtk-x86_64.tar.gz -C /opt
-    cat /usr/share/applications/eclipse.desktop 
-        [Desktop Entry]
-        Name=Eclipse 4
-        Type=Application
-        Exec=/opt/eclipse/eclipse
-        Terminal=false
-        Icon=/opt/eclipse/icon.xpm
-        Comment=Integrated Development Environment
-        NoDisplay=false
-        Categories=Development;IDE;
-        Name[en]=Eclipse
-
 ## ss
 
 安装
@@ -331,28 +291,6 @@
 
     # 停止
     killall sslocal
-
-## python3安装
-
-http://mirrors.ustc.edu.cn/help/pypi.html
-
-    cat $HOME/.config/pip/pip.conf
-    [global]
-    index-url = https://mirrors.ustc.edu.cn/pypi/web/simple
-    format = columns
-
-    sudo apt install python3-pip python3-setuptools
-    pip3 install tornado
-
-## golang安装
-
-https://studygolang.com/dl
-
-    cat $HOME/.profile
-    # chuqq
-    export GOROOT=/mnt/work/bin/go
-    export PATH=$PATH:$GOROOT/bin
-
 
 ## 安装redis、mongodb等
 
