@@ -1,6 +1,6 @@
 # golang 
 
-## 安装golang指定版本
+## 通过snap安装golang指定版本（缺点：下载较慢）
 
 ```
 $ snap info node
@@ -57,11 +57,17 @@ export PATH=$PATH:$GOPATH/bin
 ```
 
 
-## golang安装（deprecated）
+## 通过从镜像下载golang压缩包并安装（优点：下载较快）
 
-https://studygolang.com/dl
-
-    cat $HOME/.profile
-    # chuqq
-    export GOROOT=/mnt/work/bin/go
-    export PATH=$PATH:$GOROOT/bin
+```
+filename=go1.12.1.linux-amd64.tar.gz
+mkdir -p ~/bin
+cd ~/bin
+wget -c http://mirrors.ustc.edu.cn/golang/${filename}
+tar zxvf ${filename}
+echo "export PATH=$PATH:~/bin/go/bin" >> ~/.bashrc
+source ~/.bashrc
+cd ~
+# 默认的gopath是~/go
+# 测试 go get github.com/valyala/fasthttp
+```
