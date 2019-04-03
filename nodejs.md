@@ -43,6 +43,21 @@ channels:
 $ sudo snap install node --channel=10/stable --classic
 ```
 
+## 通过镜像源下载nodejs包并安装
+
+```
+nodefilename=node-v10.15.3-linux-x64
+filename=${nodefilename}.tar.gz
+mkdir -p ~/bin
+cd ~/bin
+wget -c http://mirrors.ustc.edu.cn/node/latest-v10.x/${filename}
+tar zxvf ${filename}
+echo "export PATH=\$PATH:~/bin/${nodefilename}/bin" >> ~/.bashrc
+source ~/.bashrc
+cd ~
+# 测试 node --version
+```
+
 ## npm源
 
 你可以使用我们定制的 cnpm (gzip 压缩支持) 命令行工具代替默认的 npm:
