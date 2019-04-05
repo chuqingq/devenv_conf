@@ -23,7 +23,6 @@
     Fcitx配置：保留Keyboard-Chinese和搜狗拼音两种输入法即可。
     https://pinyin.sogou.com/linux/?r=pinyin
 
-
 ## 安装方案：deepin
 
 * driver
@@ -48,105 +47,6 @@
     sudo apt remove lubuntu*
     sudo apt install lxde-core # lxde-common lxdm
 
-
-### 配置
-
-    lxde: .config/openbox/lxde-rc.xml # TODO
-    lubuntu: .config/openbox/lubuntu-rc.xml
-    leafpad: .config/leafpad/leafpadrc
-    terminator: .config/terminator/config
-    lxterminal: lxterminal.conf
-
-    sudo dpkg-reconfigure lxdm # 配置登录管理器
-    openbox --reconfigure # 让配置生效
-
-#### lubuntu-rc.xml快捷键
-
-默认的Win+r快捷键不生效。因为lxsession默认应用launcher_manager设置为lxpanelctl，而应该是lxpanelctl run。可能lxsession默认应用不支持命令中有空格，因此直接修改openbox的快捷键的配置：
-
-    ~/.config/openbox$ diff -u lubuntu-rc.xml{.bak,}
-    --- lubuntu-rc.xml.bak	2015-07-05 15:17:58.132897044 +0800
-    +++ lubuntu-rc.xml	2015-07-05 21:03:50.895351663 +0800
-    @@ -339,6 +339,13 @@
-        <action name="UnmaximizeFull"/>
-        <action name="MoveResizeTo"><x>0</x><y>-0</y><width>100%</width><height>50%</height></action>
-        </keybind>
-    +
-    +    <keybind key="W-l">
-    +      <action name="Execute">
-    +        <command>lubuntu-logout</command>
-    +      </action>
-    +    </keybind>
-    +
-        <!-- Keybindings for running applications on Home + E -->
-        <keybind key="W-e">
-        <action name="Execute">
-    @@ -352,12 +359,14 @@
-        <!-- Keybindings for running Run menu from Lxpanel on Home + R-->
-        <keybind key="W-r">
-        <action name="Execute">
-    -        <command>lxsession-default launcher_manager</command>
-    +        <!--<command>lxsession-default launcher_manager</command>-->
-    +        <command>lxpanelctl run</command>
-        </action>
-        </keybind>
-        <keybind key="A-F2">
-        <action name="Execute">
-    -        <command>lxsession-default launcher_manager</command>
-    +        <!--<command>lxsession-default launcher_manager</command>-->
-    +        <command>lxpanelctl run</command>
-        </action>
-        </keybind>
-        <!-- Keybindings for running Menu from Lxpanel -->
-    @@ -371,6 +380,10 @@
-            <command>lxpanelctl menu</command>
-        </action>
-        </keybind>
-    +    <!-- F10 -> fullscreen -->
-    +    <keybind key="F10">
-    +      <action name="ToggleMaximize"/>
-    +    </keybind>
-        <!-- Keybindings to toggle fullscreen -->
-        <keybind key="F11">
-        <action name="ToggleFullscreen"/>
-
-然后用openbox --reconfigure使之生效
-
-#### lxpanel配置
-
-窗口栏只展示图标，不展示文字（占地方）
-
-    --- panel2015-02-22 22:55:35.547920872 +0800
-    +++ panel.bak2015-02-22 22:42:33.249039061 +0800
-    @@ -97,14 +97,14 @@
-        expand=1
-        Config {
-            tooltips=1
-    -        IconsOnly=1
-    +        IconsOnly=0
-            ShowAllDesks=0
-            UseMouseWheel=1
-            UseUrgencyHint=1
-            FlatButton=0
-            MaxTaskWidth=150
-            spacing=1
-    -        GroupedTasks=1
-    +        GroupedTasks=0
-        }
-    }
-    
-    @@ -167,9 +167,8 @@
-        type = monitors
-        Config {
-            DisplayCPU=1
-    -        DisplayRAM=1
-    +        DisplayRAM=0
-            CPUColor=#0000FF
-    -        RAMColor=#FF0000
-        }
-    }
-
-
 ## 安装方案：ubuntuserver+lxde
 
     https://help.ubuntu.com/community/Installation/MinimalCD/
@@ -157,11 +57,7 @@
 
 ## 修改源
 
-    命令：
     sudo sed -i 's/cn.archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
-    参考：
-    http://mirrors.ustc.edu.cn/help/ubuntu.html
-    /etc/apt/sources.list
 
 
 ## 安装linuxbrew
@@ -194,7 +90,6 @@
 
     sudo dpkg -i google-chrome-stable_current_amd64.deb
 
-
 ### chromium+flash
 
     sudo apt-get update
@@ -203,6 +98,7 @@
     sudo update-pepperflashplugin-nonfree --install
     卸载命令：
     sudo apt-get remove chromium-browser pepperflashplugin-nonfree
+    # 貌似现在不装flash也可用
 
 ## 输入法
 
@@ -244,11 +140,23 @@
 
 ## sublimetext
 
-    http://www.sublimetext.com/docs/3/linux_repositories.html
+    # 参考 https://www.sublimetext.com/docs/3/linux_repositories.html#apt
+    wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+    sudo apt-get install apt-transport-https
+    echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+    sudo apt-get update
+    sudo apt-get install sublime-text
+    # 安装sublime_im_fix修正输入法错误
 
 ## vscode
 
-    https://code.visualstudio.com/Download
+    # 方案1：从官方网站安装
+    访问 https://code.visualstudio.com/Download 查看下载地址
+    wget -c https://vscode.cdn.azure.cn/stable/a3db5be9b5c6ba46bb7555ec5d60178ecc2eaae4/code_1.32.3-1552606978_amd64.deb
+    sudo apt install ./code_1.32.3-1552606978_amd64.deb
+
+    # 方案2：从snap安装
+    sudo snap install code --classic
 
 ## 安装source-code-pro字体
 
