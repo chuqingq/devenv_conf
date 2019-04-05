@@ -1,30 +1,35 @@
-# python环境
+# python安装
 
-1. 安装pip3
-
-```
-sudo apt install python3-ip
-```
-
-1. 配置国内镜像
-
+以python3为例：
 
 ```
-cat ~/.pip/pip.conf
+sudo apt install python3-pip python3-setuptools
+pip3 install tornado
+```
+
+# 配置国内镜像源
+
+python配置：
+
+```
+mkdir -p ~/.pip
+cat > ~/.pip/pip.conf << EOF
 [global]
 index-url = https://mirrors.ustc.edu.cn/pypi/web/simple
 [install]
 trusted-host = mirrors.ustc.edu.cn
+EOF
 ```
 
-## python3安装
+python3配置：
 
 http://mirrors.ustc.edu.cn/help/pypi.html
 
-    cat $HOME/.config/pip/pip.conf
-    [global]
-    index-url = https://mirrors.ustc.edu.cn/pypi/web/simple
-    format = columns
-
-    sudo apt install python3-pip python3-setuptools
-    pip3 install tornado
+```
+mkdir -p ~/.config/pip
+cat > ~/.config/pip/pip.conf << EOF
+[global]
+index-url = https://mirrors.ustc.edu.cn/pypi/web/simple
+format = columns
+EOF
+```
