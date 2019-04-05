@@ -158,6 +158,15 @@
     # 方案2：从snap安装
     sudo snap install code --classic
 
+## wps-office
+
+    # 访问 http://www.wps.cn/product/wpslinux 获得下载地质
+    wget -c https://wdl1.cache.wps.cn/wps/download/ep/Linux2019/8372/wps-office_11.1.0.8372_amd64.deb
+    sudo apt install ./wps-office*.deb
+
+    # 方案2：版本比较旧
+    sudo snap install wps-office
+
 ## 安装source-code-pro字体
 
     下载地址：https://github.com/adobe-fonts/source-code-pro/downloads`
@@ -183,23 +192,27 @@
 
 ## ss
 
-安装
+    sudo apt install shadowsocks-libev
+    # 修改配置文件
+    sudo vi /etc/shadowsocks-libev/config.json
+    # 启动ss-local
+    ss-local -c /etc/shadowsocks-libev/config.json &
+    # 验证
+    curl -x socks5://127.0.0.1:1080 www.google.com
 
-    apt-get install python-pip
-    sudo apt install libsodium-dev
-    sudo pip install https://github.com/shadowsocks/shadowsocks/archive/master.zip -U
+### 设置系统代理（目的是安装chromium的switchyomega插件）
 
-安装浏览器插件
+    网络->网络代理->手动->socks主机配置为127.0.0.1:1080
+    可以让chromium先用系统的设置
+
+### chromium安装switchyomega插件
 
     https://github.com/FelisCatus/SwitchyOmega/releases
+    https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif
 
-设置socks5,127.0.0.1,1080.
+### 导入switchyomega_options配置文件
 
-    # 启动
-    nohup sslocal -s <server> -p <port> -l 1080 -k <password> -m <method> >ss.log 2>1 &
-
-    # 停止
-    killall sslocal
+### 开启chromium同步功能
 
 ## 安装redis、mongodb等
 
