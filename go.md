@@ -66,6 +66,8 @@ cd ~/bin
 wget -c http://mirrors.ustc.edu.cn/golang/${filename}
 tar zxvf ${filename}
 echo "export PATH=\$PATH:~/bin/go/bin" >> ~/.bashrc
+echo "export PATH=\$PATH:~/go/bin" >> ~/.bashrc
+echo "export GO111MODULE=on" >> ~/.bashrc
 source ~/.bashrc
 cd ~
 # 默认的gopath是~/go
