@@ -172,6 +172,7 @@
     下载地址：https://github.com/adobe-fonts/source-code-pro/downloads`
     安装步骤：http://blog.csdn.net/android_hasen/article/details/50523013`
 
+    wget -c https://github.com/downloads/adobe-fonts/source-code-pro/SourceCodePro_FontsOnly-1.013.zip
     unzip SourceCodePro_FontsOnly-1.013.zip
     mkdir ~/.fonts
     cp SourceCodePro_FontsOnly-1.013/OTF/* ~/.fonts/
