@@ -65,10 +65,16 @@ mkdir -p ~/bin
 cd ~/bin
 wget -c http://mirrors.ustc.edu.cn/golang/${filename}
 tar zxvf ${filename}
-echo "export PATH=\$PATH:~/bin/go/bin" >> ~/.bashrc
-echo "export PATH=\$PATH:~/go/bin" >> ~/.bashrc
-echo "export GO111MODULE=on" >> ~/.bashrc
-source ~/.bashrc
+
+# 配置环境变量
+tee -a ~/.bashrc << EOF
+
+# go
+export PATH=\$PATH:~/bin/go/bin
+export PATH=\$PATH:~/go/bin
+export GO111MODULE=on
+
+EOF
 cd ~
 # 默认的gopath是~/go
 # 测试 go get github.com/valyala/fasthttp

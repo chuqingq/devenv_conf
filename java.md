@@ -17,13 +17,15 @@ wget -c "https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5a
 tar zxvf jdk-*-linux-x64.tar.gz
 
 # 配置环境变量
-echo "" >> ~/.bashrc
-echo "# jdk" >> ~/.bashrc
-echo "export JAVA_HOME=~/bin/jdk1.8.0_201" >> ~/.bashrc
-echo "export JRE_HOME=\${JAVA_HOME}/jre" >> ~/.bashrc
-echo "export CLASSPATH=.:\${JAVA_HOME}/lib:\${JRE_HOME}/lib" >> ~/.bashrc
-echo "export PATH=\${JAVA_HOME}/bin:\$PATH" >> ~/.bashrc
-echo "" >> ~/.bashrc
+tee -a ~/.bashrc << EOF
+
+# jdk
+export JAVA_HOME=~/bin/jdk1.8.0_201
+export JRE_HOME=\${JAVA_HOME}/jre
+export CLASSPATH=.:\${JAVA_HOME}/lib:\${JRE_HOME}/lib
+export PATH=\${JAVA_HOME}/bin:\$PATH
+
+EOF
 ```
 
 ### centos安装jdk
