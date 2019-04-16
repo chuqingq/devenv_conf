@@ -48,11 +48,11 @@ $ sudo snap install node --channel=10/stable --classic
 ```
 nodefilename=node-v10.15.3-linux-x64
 filename=${nodefilename}.tar.gz
-mkdir -p ~/bin
-cd ~/bin
+mkdir -p ~/temp/bin
+cd ~/temp/bin
 wget -c http://mirrors.ustc.edu.cn/node/latest-v10.x/${filename}
 tar zxvf ${filename}
-echo "export PATH=\$PATH:~/bin/${nodefilename}/bin" >> ~/.bashrc
+echo "export PATH=\$PATH:~/temp/bin/${nodefilename}/bin" >> ~/.bashrc
 source ~/.bashrc
 cd ~
 # 测试 node --version
@@ -65,4 +65,3 @@ cd ~
 ```
 $ npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
-
