@@ -61,8 +61,8 @@ export PATH=$PATH:$GOPATH/bin
 
 ```
 filename=go1.12.1.linux-amd64.tar.gz
-mkdir -p ~/bin
-cd ~/bin
+mkdir -p ~/temp/bin
+cd ~/temp/bin
 wget -c http://mirrors.ustc.edu.cn/golang/${filename}
 tar zxvf ${filename}
 
@@ -70,9 +70,9 @@ tar zxvf ${filename}
 tee -a ~/.bashrc << EOF
 
 # go
-export PATH=\$PATH:~/bin/go/bin
-export PATH=\$PATH:~/go/bin
+export PATH=\$PATH:~/temp/bin/go/bin
 export GOPATH=~/temp/gopath
+export PATH=\$PATH:\$GOPATH/bin
 export GO111MODULE=on
 
 EOF
