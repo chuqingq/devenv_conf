@@ -12,7 +12,7 @@ sudo apt remove openjdk*
 # 下载地址（jdk8）： https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 # 浏览器打开后勾选accept license，然后点击对应的版本进行下载，复制下载地址。
 
-cd ~/bin
+cd ~/temp/bin
 wget -c "https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/jdk-8u201-linux-x64.tar.gz?AuthParam=1554787885_fc1f04450ab668d4481999d39808a07a" -O jdk-8u201-linux-x64.tar.gz
 tar zxvf jdk-*-linux-x64.tar.gz
 
@@ -20,7 +20,7 @@ tar zxvf jdk-*-linux-x64.tar.gz
 tee -a ~/.bashrc << EOF
 
 # jdk
-export JAVA_HOME=~/bin/jdk1.8.0_201
+export JAVA_HOME=~/temp/bin/jdk1.8.0_201
 export JRE_HOME=\${JAVA_HOME}/jre
 export CLASSPATH=.:\${JAVA_HOME}/lib:\${JRE_HOME}/lib
 export PATH=\${JAVA_HOME}/bin:\$PATH
