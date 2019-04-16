@@ -72,6 +72,7 @@ tee -a ~/.bashrc << EOF
 # go
 export PATH=\$PATH:~/bin/go/bin
 export PATH=\$PATH:~/go/bin
+export GOPATH=~/temp/gopath
 export GO111MODULE=on
 
 EOF
