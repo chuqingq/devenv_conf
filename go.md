@@ -77,6 +77,7 @@ export GO111MODULE=on
 
 EOF
 cd ~
+source ~/.bashrc
 # 默认的gopath是~/go
 # 测试 go get github.com/valyala/fasthttp
 ```
