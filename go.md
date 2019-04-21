@@ -1,5 +1,30 @@
 # golang 
 
+## 通过从镜像下载golang压缩包并安装（优点：下载较快）
+
+```
+filename=go1.12.1.linux-amd64.tar.gz
+mkdir -p ~/temp/bin
+cd ~/temp/bin
+wget -c http://mirrors.ustc.edu.cn/golang/${filename}
+tar zxvf ${filename}
+
+# 配置环境变量
+tee -a ~/.bashrc << EOF
+
+# go
+export PATH=\$PATH:~/temp/bin/go/bin
+export GOPATH=~/temp/gopath
+export PATH=\$PATH:\$GOPATH/bin
+export GO111MODULE=on
+
+EOF
+cd ~
+source ~/.bashrc
+# 默认的gopath是~/go
+# 测试 go get github.com/valyala/fasthttp
+```
+
 ## 通过snap安装golang指定版本（缺点：下载较慢）
 
 ```
@@ -54,30 +79,4 @@ $ sudo snap install go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export GOPATH=/Volumes/work/go
 export PATH=$PATH:$GOPATH/bin
-```
-
-
-## 通过从镜像下载golang压缩包并安装（优点：下载较快）
-
-```
-filename=go1.12.1.linux-amd64.tar.gz
-mkdir -p ~/temp/bin
-cd ~/temp/bin
-wget -c http://mirrors.ustc.edu.cn/golang/${filename}
-tar zxvf ${filename}
-
-# 配置环境变量
-tee -a ~/.bashrc << EOF
-
-# go
-export PATH=\$PATH:~/temp/bin/go/bin
-export GOPATH=~/temp/gopath
-export PATH=\$PATH:\$GOPATH/bin
-export GO111MODULE=on
-
-EOF
-cd ~
-source ~/.bashrc
-# 默认的gopath是~/go
-# 测试 go get github.com/valyala/fasthttp
 ```
