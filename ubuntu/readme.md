@@ -53,6 +53,11 @@
     sudo apt install lxde-core lxdm xserver-xorg # lxdm可以换为lightdm
 
 
+## 安装方案：ubuntu 16.04
+
+好处：支持界面非整比例缩放。缩放比例调节1.5。
+
+
 # 修改配置
 
 ## 修改源
@@ -193,13 +198,13 @@
 
 ## ss
 
-    sudo apt install shadowsocks-libev
-    # 修改配置文件
-    sudo vi /etc/shadowsocks-libev/config.json
-    # 启动ss-local
-    ss-local -c /etc/shadowsocks-libev/config.json &
-    # 验证
-    curl -x socks5://127.0.0.1:1080 www.google.com
+    # 下载地址：当前最新版本3.0.1，支持CHACHA20-IETF-POLY1305加密。
+    https://github.com/shadowsocks/shadowsocks-qt5/releases
+    # 加权限
+    chmod a+x Shadowsocks-Qt5-3.0.1-x86_64.AppImage
+    # 启动
+    ./Shadowsocks-Qt5-3.0.1-x86_64.AppImage
+    # 修改配置或者从网盘直接下载json配置文件并导入
 
 ### 设置系统代理（目的是安装chromium的switchyomega插件）
 
