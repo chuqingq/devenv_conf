@@ -20,7 +20,7 @@ cd ~
 你可以使用我们定制的 cnpm (gzip 压缩支持) 命令行工具代替默认的 npm:
 
 ```
-$ npm install -g cnpm --registry=https://registry.npm.taobao.org
+$ sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 
 ## 安装nodejs指定版本
