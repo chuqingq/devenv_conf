@@ -10,7 +10,7 @@ EOF
 
 sudo tee -a /etc/pacman.conf << EOF
 [archlinuxcn]
-Server = https://mirrors.ustc.edu.cn/archlinuxcn/\$arch
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/\$arch
 
 EOF
 ```
