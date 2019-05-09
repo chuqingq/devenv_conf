@@ -1,10 +1,15 @@
 # manjaro
 
 ```
-sudo pacman-mirrors -i -c China -m rank
+sudo tee /etc/pacman.d/mirrorlist << EOF
+Server = http://mirrors.163.com/archlinux/\$repo/os/\$arch
+Server = http://mirrors.ustc.edu.cn/archlinux/\$repo/os/\$arch
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/\$repo/os/\$arch
+
+EOF
+
 sudo tee -a /etc/pacman.conf << EOF
 [archlinuxcn]
-SigLevel = Optional TrustedOnly
 Server = https://mirrors.ustc.edu.cn/archlinuxcn/\$arch
 
 EOF
@@ -13,17 +18,16 @@ EOF
 ## 更新源列表
 
 ```
-sudo pacman-mirrors -g
-```
-
-## 防止PGP签名错误
-
-```
 sudo pacman -Sy
+```
+
+## 防止 PGP 签名错误
+
+```
 sudo pacman -S archlinuxcn-keyring
 ```
 
-## 更新pacman数据库并全面更新系统
+## 更新 pacman 数据库并全面更新系统
 
 ```
 sudo pacman -Syyu
@@ -31,13 +35,13 @@ sudo pacman -Syyu
 
 # software
 
-## 设置gnome-terminal和gedit字体
+## 设置 gnome-terminal 和 gedit 字体
 
 在上面更新系统后才有相应的字体。
 
 ## 开启触摸板自然滚动
 
-## 设置disks自动挂载
+## 设置 disks 自动挂载
 
 ## 设置快捷键
 
@@ -47,7 +51,7 @@ gnome-terminal ctrl+alt+t
 nautilus super+e
 ```
 
-## 去掉gnome-terminal的beep声
+## 去掉 gnome-terminal 的 beep 声
 
 ## 输入法
 
@@ -96,7 +100,7 @@ sudo pacman -S vim go nodejs gcc make clang jdk8\
 sudo systemctl start docker
 sudo systemctl status docker
 
-## 设置shadowsocks和chrome
+## 设置 shadowsocks 和 chrome
 
 从网盘下载两个配置文件，并导入。
 
@@ -104,7 +108,7 @@ sudo systemctl status docker
 
 sudo pacman -S yaourt
 
-# 不要折腾deepin桌面了，一堆问题。
+# 不要折腾 deepin 桌面了，一堆问题。
 
 yaourt -S deepin-wechat
 yaourt -S deepin-wine-tim
