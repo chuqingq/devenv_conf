@@ -97,18 +97,35 @@ sudo pacman -S vim go nodejs gcc make clang jdk8\
 
 ### 起停服务：默认不自动启动
 
+```
 sudo systemctl start docker
 sudo systemctl status docker
+```
 
 ## 设置 shadowsocks 和 chrome
 
 从网盘下载两个配置文件，并导入。
 
+# bios时间和系统时间同步（解决linux和win差8小时的问题）
+
+```
+# 显示硬件时间，需要确认是UTC还是LOCAL
+sudo hwclock --show
+# 设置硬件时间
+sudo hwclock --set --date="05/11/19 13:45"
+# 把硬件时间同步到系统时间
+sudo hwclock --hctosys
+```
+
 # yaourt 暂时好像还不需要。
 
+```
 sudo pacman -S yaourt
+```
 
 # 不要折腾 deepin 桌面了，一堆问题。
 
+```
 yaourt -S deepin-wechat
 yaourt -S deepin-wine-tim
+```
