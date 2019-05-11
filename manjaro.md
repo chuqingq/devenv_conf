@@ -115,6 +115,17 @@ sudo hwclock --set --date="05/11/19 13:45"
 sudo hwclock --hctosys
 ```
 
+# 修改Manjaro文件夹的默认打开程序
+
+问题：自从安装了 VSCode，现在打开文件夹，都是用VSCode打开
+
+```
+# 显示默认的打开的软件
+xdg-mime query default inode/directory
+# 设置文件夹的打开方式为默认的方式，org.gnome.Nautilus.desktop 是我电脑的默认打开程序
+xdg-mime default  org.gnome.Nautilus.desktop inode/directory  
+```
+
 # 双显卡驱动
 
 https://blog.csdn.net/ytingone/article/details/82535090
@@ -129,8 +140,7 @@ Intel+Nvidia在Linux下的支持并不是很好，如果配置不当会出现耗
 安装方式非常简单，在设置中，选择“Manjaro Settings Manager”->“Hardware Configuration”，然后点击“Auto Install Proprietary Driver”按钮即可
 安装过程很快，安装结束后重启即可
 
-### 
-测试与Debug
+### 测试与Debug
 安装完毕后，先验证一下自己当前日常使用的账户是否加入了bumblebee用户组
 
 ### 判断用户是否在某个组下
