@@ -117,6 +117,42 @@ sudo hwclock --set --date="05/11/19 13:45"
 sudo hwclock --hctosys
 ```
 
+# 双显卡驱动
+
+https://blog.csdn.net/ytingone/article/details/82535090
+
+### 说明
+Intel+Nvidia在Linux下的支持并不是很好，如果配置不当会出现耗电增加或是屏幕glich等问题，有几种方案可以实现双显卡的和谐共存，Manjaro自带bumblebee，通过bumblebee实现Nvidia驱动的按需调用
+
+### 安装步骤
+
+安装Manjaro时，如果没有特别选择，默认是不会自动安装Intel与Nvidia的显卡驱动的，所以我们需要在系统安装完毕后手动安装两种驱动.
+
+安装方式非常简单，在设置中，选择“Manjaro Settings Manager”->“Hardware Configuration”，然后点击“Auto Install Proprietary Driver”按钮即可
+安装过程很快，安装结束后重启即可
+
+### 
+测试与Debug
+安装完毕后，先验证一下自己当前日常使用的账户是否加入了bumblebee用户组
+
+### 判断用户是否在某个组下
+
+    groups $user_name
+ 
+### 如果不在，使用下面的命令加入
+
+    usermod -a -G bumblebee $user_name
+
+然后尝试使用optirun
+
+### 先使用集成显卡测试
+
+    glxgears
+ 
+### 再使用Nvidia显卡测试
+
+    optirun glxgears
+
 # yaourt 暂时好像还不需要。
 
 ```
