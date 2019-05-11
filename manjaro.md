@@ -2,10 +2,8 @@
 
 ```
 sudo tee /etc/pacman.d/mirrorlist << EOF
-Server = http://mirrors.163.com/archlinux/\$repo/os/\$arch
-Server = http://mirrors.ustc.edu.cn/archlinux/\$repo/os/\$arch
-Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/\$repo/os/\$arch
-
+Server = http://mirrors.tuna.tsinghua.edu.cn/manjaro/stable/\$repo/\$arch
+Server = https://mirrors.ustc.edu.cn/manjaro/stable/\$repo/\$arch\
 EOF
 
 sudo tee -a /etc/pacman.conf << EOF
