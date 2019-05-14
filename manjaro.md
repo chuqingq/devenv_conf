@@ -127,6 +127,13 @@ xdg-mime query default inode/directory
 xdg-mime default  org.gnome.Nautilus.desktop inode/directory  
 ```
 
+# virtualbox配置
+
+- 先升级系统 `sudo pacman -Syyu`
+- 安装内核头文件 `sudo pacman -S linux-headers` 选择合适的版本，当前是 `linux-419`
+- 挂载光盘，然后安装 `sudo ./VBoxLinuxAdditions.run`
+- 重启 `sudo reboot`
+
 # 双显卡驱动
 
 https://blog.csdn.net/ytingone/article/details/82535090
