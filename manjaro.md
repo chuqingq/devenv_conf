@@ -132,7 +132,10 @@ xdg-mime default  org.gnome.Nautilus.desktop inode/directory
 - 先升级系统 `sudo pacman -Syyu`
 - 安装内核头文件 `sudo pacman -S linux-headers` 选择合适的版本，当前是 `linux-419`
 - 挂载光盘，然后安装 `sudo ./VBoxLinuxAdditions.run`
-- 重启 `sudo reboot`
+- 加入群组 `sudo usermod -a -G vboxsf chuqq`
+- 允许在共享文件夹创建软链接 `VBoxManage setextradata manjaro VBoxInternal2/SharedFoldersEnableSymlinksCreate/temp 1` 查看效果 `VBoxManage getextradata manjaro enumerate`
+- 在virtualbox主界面中的虚拟机上右键，“创建桌面快捷方式”。
+- 后续启动虚拟机时，以管理员身份运行桌面上的虚拟机快捷方式即可。
 
 # 双显卡驱动
 
