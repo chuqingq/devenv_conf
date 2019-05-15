@@ -77,7 +77,7 @@ sudo pacman -Ss visual-studio-code
 sudo pacman -Si visual-studio-code-bin
 
 sudo pacman -S vim go nodejs gcc make clang jdk8\
-    nmap iftop openbsd-netcat\
+    nmap iftop openbsd-netcat net-tools\
     tcpdump wireshark-qt\
     visual-studio-code-bin google-chrome\
     wps-office ttf-wps-fonts\
