@@ -137,6 +137,15 @@ xdg-mime default  org.gnome.Nautilus.desktop inode/directory
 - 在virtualbox主界面中的虚拟机上右键，“创建桌面快捷方式”。
 - 后续启动虚拟机时，以管理员身份运行桌面上的虚拟机快捷方式即可。
 
+# wsl配置
+
+- 开启sshd
+    - `ssh-keygen -A`
+    - `/usr/sbin/sshd -D &`
+- 默认使用vim
+    - `echo "alias vi=vim" >> ~/.bashrc`
+    - `source ~/.bashrc`
+
 # 双显卡驱动
 
 https://blog.csdn.net/ytingone/article/details/82535090
