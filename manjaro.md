@@ -153,7 +153,7 @@ xdg-mime default  org.gnome.Nautilus.desktop inode/directory
 ## 修复matebook13的启动项
 
 1. 以管理员权限运行cmd `mountvol z: /S`
-1. booice -> UEFI -> 修改启动序列 -> 添加 -> 选择`\EFI\manjaro\grubx64.efi` -> 保存当前启动项设置
+1. booice -> UEFI -> 修改启动序列 -> 添加 -> 选择`\EFI\manjaro\grubx64.efi` -> 保存当前启动项设置   
 
 # wsl配置
 
