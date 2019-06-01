@@ -75,8 +75,16 @@ $ sudo snap install go
 ## 配置环境变量
 
 我的macbook需要：
-```
+```bash
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export GOPATH=/Volumes/work/go
 export PATH=$PATH:$GOPATH/bin
+```
+
+## go mod 模式
+
+```bash
+export GO111MODULE=on
+export GOPROXY=https://goproxy.io
+# export GOPROXY=https://athens.azurefd.net
 ```
