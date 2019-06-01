@@ -137,6 +137,24 @@ xdg-mime default  org.gnome.Nautilus.desktop inode/directory
 - 在virtualbox主界面中的虚拟机上右键，“创建桌面快捷方式”。
 - 后续启动虚拟机时，以管理员身份运行桌面上的虚拟机快捷方式即可。
 
+# 修复启动项
+
+## 修复grub
+
+经常windows更新后就没有grub了，修复方法如下
+
+1. `mkdir chuqq`
+1. `sudo mount /dev/nvmes0n0p4 chuqq/`
+1. `sudo mount /dev/nvmes0n0p1 chuqq/boot/efi`
+1. `sudo mount --bind /sys chuqq/sys`
+1. `sudo mount --bind /proc chuqq/proc`
+1. `sudo mount --bind /dev chuqq/dev`
+
+## 修复matebook13的启动项
+
+1. 以管理员权限运行cmd `mountvol z: /S`
+1. booice -> UEFI -> 修改启动序列 -> 添加 -> 选择`\EFI\manjaro\grubx64.efi` -> 保存当前启动项设置
+
 # wsl配置
 
 - 开启sshd
