@@ -39,8 +39,9 @@ EOF
 sudo pacman -Sy
 ```
 
-1. 如果无法共享目录
-```
-sudo pacman -S linux-headers
-sudo /sbin/rcvboxadd setup
-```
+### 如果无法共享目录
+
+1. box需要和virtualbox版本匹配，例如6.0.8
+1. 重装virtualbox后需要重启
+1. 启动时以管理员权限运行powershell，然后vagrant up。如果先以普通用户启动过virtualbox，需要傻屌相关进程，重新以管理员用户启动virtualbox，或者运行vagrant up
+1. 验证共享目录ok： `cd temp && ln -s already_dir test && rm -r test`
