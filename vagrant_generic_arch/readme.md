@@ -38,3 +38,9 @@ EOF
 ```
 sudo pacman -Sy
 ```
+
+1. 如果无法共享目录
+```
+sudo pacman -S linux-headers
+sudo /sbin/rcvboxadd setup
+```
