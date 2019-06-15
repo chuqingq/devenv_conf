@@ -1,7 +1,7 @@
 1. 安装virtualbox、vagrant，重启电脑
 
 1. 
-```
+```sh
 # 下载box
 wget -c https://vagrantcloud.com/generic/boxes/arch/versions/1.9.14/providers/virtualbox.box -O generic_arch.box
 
@@ -21,7 +21,7 @@ vagrant ssh
 
 1. 修改arch的源
 
-```
+```sh
 sudo tee /etc/pacman.d/mirrorlist << EOF
 Server = https://mirrors.ustc.edu.cn/archlinux/\$repo/os/\$arch
 
@@ -35,7 +35,7 @@ EOF
 ```
 
 1. 更新
-```
+```sh
 sudo pacman -Sy
 ```
 

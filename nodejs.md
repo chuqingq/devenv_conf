@@ -2,7 +2,7 @@
 
 ## 通过镜像源下载nodejs包并安装
 
-```
+```sh
 nodefilename=node-v10.15.3-linux-x64
 filename=${nodefilename}.tar.gz
 mkdir -p ~/temp/bin
@@ -19,14 +19,14 @@ cd ~
 
 你可以使用我们定制的 cnpm (gzip 压缩支持) 命令行工具代替默认的 npm:
 
-```
-$ sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
-$ npm config set registry https://registry.npm.taobao.org
+```sh
+sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
+npm config set registry https://registry.npm.taobao.org
 ```
 
 ## 安装nodejs指定版本
 
-```
+```sh
 $ snap info node
 name:      node
 summary:   Node.js
