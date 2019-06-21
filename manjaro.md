@@ -184,7 +184,8 @@ nvme0n1     259:0    0    477G  0 disk
 ## 修复matebook13的启动项
 
 1. 以管理员权限运行cmd `mountvol z: /S`
-1. booice -> UEFI -> 修改启动序列 -> 添加 -> 选择`\EFI\manjaro\grubx64.efi` -> 保存当前启动项设置   
+1. booice -> UEFI -> 修改启动序列 -> 添加 -> 选择`\EFI\manjaro\grubx64.efi` 名字改为manjaro -> 保存当前启动项设置&保存全局设置
+1. 重启，按F12进入启动项菜单，会比之前多一个manjaro
 
 # wsl配置
 
