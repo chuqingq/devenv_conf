@@ -143,12 +143,43 @@ xdg-mime default  org.gnome.Nautilus.desktop inode/directory
 
 经常windows更新后就没有grub了，修复方法如下
 
-1. `mkdir chuqq`
-1. `sudo mount /dev/nvmes0n0p4 chuqq/`
-1. `sudo mount /dev/nvmes0n0p1 chuqq/boot/efi`
-1. `sudo mount --bind /sys chuqq/sys`
-1. `sudo mount --bind /proc chuqq/proc`
-1. `sudo mount --bind /dev chuqq/dev`
+```bash
+lsblk
+sudo mkdir /mnt/manjaro
+sudo mount /dev/nvme0n1p6 /mnt/manjaro/
+sudo mount /dev/nvme0n1p1 /mnt/manjaro/boot/efi/
+sudo mount --bind /dev /mnt/manjaro/dev/
+sudo mount --bind /proc /mnt/manjaro/proc
+sudo mount --bind /sys /mnt/manjaro/sys
+cd /mnt/manjaro/
+sudo chroot .
+
+pacman -Scc
+sudo pacman -Sy
+sudo pacman -S linux
+```
+
+lsblk结果参考：
+```
+NAME        MAJ:MIN RM    SIZE RO TYPE MOUNTPOINT
+loop0         7:0    0   75.4M  1 loop /run/miso/sfs/livefs
+loop1         7:1    0  312.6M  1 loop /run/miso/sfs/mhwdfs
+loop2         7:2    0 1000.1M  1 loop /run/miso/sfs/desktopfs
+loop3         7:3    0  475.5M  1 loop /run/miso/sfs/rootfs
+sda           8:0    1     15G  0 disk 
+├─sda1        8:1    1    1.9G  0 part /run/miso/bootmnt
+└─sda2        8:2    1      4M  0 part 
+nvme0n1     259:0    0    477G  0 disk 
+├─nvme0n1p1 259:1    0    100M  0 part 
+├─nvme0n1p2 259:2    0     16M  0 part 
+├─nvme0n1p3 259:3    0     80G  0 part 
+├─nvme0n1p4 259:4    0    150G  0 part /run/media/manjaro/work
+├─nvme0n1p5 259:5    0    150G  0 part 
+├─nvme0n1p6 259:6    0   85.1G  0 part 
+├─nvme0n1p7 259:7    0    512M  0 part 
+├─nvme0n1p8 259:8    0   10.2G  0 part 
+└─nvme0n1p9 259:9    0      1G  0 part 
+```
 
 ## 修复matebook13的启动项
 
