@@ -46,7 +46,9 @@ sudo pacman -Syyu
 
 ```
 设置 super+s
-gnome-terminal ctrl+alt+t
+隐藏所有正常窗口 Super+D
+复制选区截图到粘帖板 alt+a
+terminator ctrl+alt+t
 nautilus super+e
 ```
 
