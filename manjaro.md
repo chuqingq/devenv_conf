@@ -81,7 +81,7 @@ sudo pacman -S vim go nodejs gcc make clang jdk8\
     tcpdump wireshark-qt\
     visual-studio-code-bin google-chrome\
     wps-office ttf-wps-fonts\
-    netease-cloud-music\
+    netease-cloud-music vlc\
     shadowsocks-qt5\
     foxitreader\
     typora\
