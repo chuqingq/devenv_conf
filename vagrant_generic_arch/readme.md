@@ -48,8 +48,17 @@ sudo pacman -Sy
 
 ### 常用链接
 
+```
 https://github.com/terrywang/vagrantboxes
 http://cloud.terry.im/vagrant/archlinux-x86_64.box
 
 https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64-vagrant.box
 http://mirrors.ustc.edu.cn/ubuntu-cloud-images/bionic/current/bionic-server-cloudimg-amd64-vagrant.box
+```
+
+从vagrant官网下载的方式：
+```
+wget -c https://vagrantcloud.com/<user>/boxes/<box_name>/versions/<version_without_v>/providers/<provider>.box -O generic_arch.box
+例如
+wget -c https://vagrantcloud.com/generic/boxes/arch/versions/1.9.14/providers/virtualbox.box -O generic_arch.box
+```
