@@ -49,4 +49,5 @@ sudo pacman -Sy
 ### 常用链接
 
 https://github.com/terrywang/vagrantboxes
+https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64-vagrant.box
 http://mirrors.ustc.edu.cn/ubuntu-cloud-images/bionic/current/bionic-server-cloudimg-amd64-vagrant.box
