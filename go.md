@@ -85,6 +85,7 @@ export PATH=$PATH:$GOPATH/bin
 
 ```bash
 export GO111MODULE=on
-export GOPROXY=https://goproxy.io
+export GOPROXY=https://mirrors.cloud.tencent.com/go/
+#export GOPROXY=https://goproxy.io
 # export GOPROXY=https://athens.azurefd.net
 ```
