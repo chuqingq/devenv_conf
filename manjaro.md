@@ -77,7 +77,7 @@ EOF
 sudo pacman -Ss visual-studio-code
 sudo pacman -Si visual-studio-code-bin
 
-sudo pacman -S vim go nodejs gcc make clang jdk8\
+sudo pacman -S vim go nodejs gcc make clang jdk8 zsh fzf\
     nmap iftop openbsd-netcat net-tools\
     tcpdump wireshark-qt\
     visual-studio-code-bin google-chrome\
@@ -100,6 +100,18 @@ sudo pacman -S vim go nodejs gcc make clang jdk8\
 ```
 sudo systemctl start docker
 sudo systemctl status docker
+```
+
+## 安装oh-my-zsh
+
+```
+ZSH_THEME="agnoster"
+ plugins=(git
+     golang
+     fzf
+     sudo
+     fasd
+     zsh-autosuggestions)
 ```
 
 ## 设置 shadowsocks 和 chrome
