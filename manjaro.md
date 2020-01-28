@@ -118,6 +118,13 @@ ZSH_THEME="agnoster"
 
 从网盘下载两个配置文件，并导入。
 
+## tilix配置
+
+```
+dconf dump /com/gexperts/Tilix/ > tilix.dconf
+dconf load /com/gexperts/Tilix/ < tilix.dconf
+```
+
 # bios时间和系统时间同步（解决linux和win差8小时的问题）
 
 ```
