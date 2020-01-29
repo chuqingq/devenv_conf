@@ -33,3 +33,9 @@ index-url = https://mirrors.ustc.edu.cn/pypi/web/simple
 format = columns
 EOF
 ```
+
+# 安装库
+
+```
+pip install --user scipy numpy matplotlib tornadoweb
+```
