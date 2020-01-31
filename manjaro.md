@@ -125,6 +125,13 @@ dconf dump /com/gexperts/Tilix/ > tilix.dconf
 dconf load /com/gexperts/Tilix/ < tilix.dconf
 ```
 
+## gnome配置
+
+```
+dconf dump /org/gnome/ > gnome.dconf
+dconf load /org/gnome/ < gnome.dconf
+```
+
 # bios时间和系统时间同步（解决linux和win差8小时的问题）
 
 ```
