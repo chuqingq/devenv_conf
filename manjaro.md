@@ -130,6 +130,9 @@ dconf load /com/gexperts/Tilix/ < tilix.dconf
 ```
 dconf dump /org/gnome/ > gnome.dconf
 dconf load /org/gnome/ < gnome.dconf
+
+# 删除dash-to-dock，只用dash-to-panel
+sudo pacman -R  manjaro-gnome-assets gnome-shell-extension-dash-to-dock
 ```
 
 # bios时间和系统时间同步（解决linux和win差8小时的问题）
