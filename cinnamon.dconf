@@ -26,15 +26,28 @@ cursor-blink-time=1200
 cursor-size=24
 cursor-theme='xcursor-breeze'
 gtk-theme='Matcha-sea'
-icon-theme='Papirus-Dark'
+icon-theme='Papirus-Light-Maia'
 scaling-factor=uint32 2
 toolkit-accessibility=false
+
+[desktop/keybindings]
+custom-list=['custom0']
+
+[desktop/keybindings/custom-keybindings/custom0]
+binding=['<Super>e']
+command='nemo'
+name='nemo'
+
+[desktop/keybindings/media-keys]
+home=['XF86Explorer']
 
 [desktop/sound]
 event-sounds=false
 
 [desktop/wm/preferences]
+num-workspaces=2
 theme='Matcha-sea'
+workspace-names=@as []
 
 [settings-daemon/peripherals/keyboard]
 delay=uint32 500
@@ -48,5 +61,9 @@ motion-threshold=1
 [settings-daemon/peripherals/touchpad]
 motion-threshold=1
 
+[settings-daemon/plugins/xsettings]
+menus-have-icons=false
+
 [theme]
 name='Matcha-dark-sea'
+theme-cache-updated=1580480916
