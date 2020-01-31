@@ -1,0 +1,392 @@
+[Totem]
+active-plugins=['recent', 'apple-trailers', 'save-file', 'rotation', 'variable-rate', 'screenshot', 'media_player_keys', 'screensaver', 'autoload-subtitles', 'skipto', 'movie-properties', 'vimeo']
+subtitle-encoding='UTF-8'
+
+[Weather]
+locations=[<(uint32 2, <('Nanjing', 'ZSNJ', false, [(0.55850536063818546, 2.0734511513692633)], @a(dd) [])>)>]
+
+[baobab/ui]
+window-size=(960, 600)
+window-state=43908
+
+[bijiben]
+window-maximized=false
+window-position=(186, 73)
+window-size=(800, 600)
+
+[calendar]
+active-view='month'
+window-maximized=true
+window-position=(0, 28)
+window-size=(1080, 650)
+
+[cheese]
+burst-delay=1000
+camera='HD Camera: HD Camera'
+photo-x-resolution=960
+photo-y-resolution=540
+video-x-resolution=960
+video-y-resolution=540
+
+[clocks]
+world-clocks=@aa{sv} []
+
+[clocks/state/window]
+panel-id='timer'
+size=(870, 650)
+state=43908
+
+[control-center]
+last-panel='info-overview'
+
+[desktop/a11y/applications]
+screen-reader-enabled=false
+
+[desktop/a11y/magnifier]
+mag-factor=1.0
+
+[desktop/applications/terminal]
+exec='tilix'
+
+[desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///home/chuqq/.local/share/backgrounds/2019-10-19-11-48-53-1.jpg'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+
+[desktop/calendar]
+show-weekdate=false
+
+[desktop/input-sources]
+sources=[('xkb', 'cn')]
+
+[desktop/interface]
+gtk-theme='Matcha-sea'
+show-battery-percentage=true
+toolkit-accessibility=false
+
+[desktop/notifications]
+application-children=['shadowsocks-qt5', 'gnome-power-panel', 'pamac-manager', 'netease-cloud-music', 'gnome-network-panel', 'org-gnome-nautilus', 'org-gnome-terminal', 'gnome-control-center', 'org-manjaro-pamac-manager', 'albert', 'wps-office-wpp', 'yelp', 'org-gnome-evince', 'google-chrome', 'qq', 'org-gnome-tweaks', 'com-gexperts-tilix', 'org-gnome-weather']
+
+[desktop/notifications/application/albert]
+application-id='albert.desktop'
+
+[desktop/notifications/application/com-gexperts-tilix]
+application-id='com.gexperts.Tilix.desktop'
+
+[desktop/notifications/application/gnome-control-center]
+application-id='gnome-control-center.desktop'
+
+[desktop/notifications/application/gnome-network-panel]
+application-id='gnome-network-panel.desktop'
+
+[desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[desktop/notifications/application/google-chrome]
+application-id='google-chrome.desktop'
+
+[desktop/notifications/application/netease-cloud-music]
+application-id='netease-cloud-music.desktop'
+
+[desktop/notifications/application/org-gnome-evince]
+application-id='org.gnome.Evince.desktop'
+
+[desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[desktop/notifications/application/org-gnome-terminal]
+application-id='org.gnome.Terminal.desktop'
+
+[desktop/notifications/application/org-gnome-tweaks]
+application-id='org.gnome.tweaks.desktop'
+
+[desktop/notifications/application/org-gnome-weather]
+application-id='org.gnome.Weather.desktop'
+
+[desktop/notifications/application/org-manjaro-pamac-manager]
+application-id='org.manjaro.pamac.manager.desktop'
+
+[desktop/notifications/application/pamac-manager]
+application-id='pamac-manager.desktop'
+
+[desktop/notifications/application/qq]
+application-id='qq.desktop'
+
+[desktop/notifications/application/shadowsocks-qt5]
+application-id='shadowsocks-qt5.desktop'
+
+[desktop/notifications/application/wps-office-wpp]
+application-id='wps-office-wpp.desktop'
+
+[desktop/notifications/application/yelp]
+application-id='yelp.desktop'
+
+[desktop/peripherals/keyboard]
+numlock-state=false
+
+[desktop/peripherals/touchpad]
+natural-scroll=true
+two-finger-scrolling-enabled=true
+
+[desktop/privacy]
+disable-microphone=false
+
+[desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///home/chuqq/.local/share/backgrounds/2019-10-19-11-48-53-1.jpg'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+
+[desktop/search-providers]
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[desktop/session]
+idle-delay=uint32 900
+
+[desktop/sound]
+event-sounds=true
+theme-name='freedesktop'
+
+[desktop/wm/keybindings]
+panel-main-menu=['<Alt>F1']
+show-desktop=['<Super>d']
+
+[evince/default]
+window-ratio=(1.7483660130718954, 0.8017676767676768)
+
+[evolution-data-server]
+migrated=true
+network-monitor-gio-name=''
+
+[file-roller/dialogs/extract]
+recreate-folders=true
+skip-newer=false
+
+[file-roller/listing]
+list-mode='as-folder'
+name-column-width=250
+show-path=false
+sort-method='name'
+sort-type='ascending'
+
+[file-roller/ui]
+sidebar-width=200
+window-height=480
+window-width=600
+
+[gedit/plugins]
+active-plugins=['time', 'spell', 'docinfo', 'modelines', 'filebrowser']
+
+[gedit/plugins/filebrowser]
+root='file:///'
+tree-view=true
+virtual-root='file:///home/chuqq'
+
+[gedit/preferences/editor]
+scheme='solarized-dark'
+use-default-font=true
+wrap-last-split-mode='word'
+
+[gedit/preferences/ui]
+show-tabs-mode='auto'
+
+[gedit/state/window]
+bottom-panel-size=140
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+size=(924, 650)
+state=43908
+
+[gnome-screenshot]
+border-effect='none'
+delay=0
+include-border=true
+include-pointer=false
+
+[gnome-system-monitor]
+cpu-colors=[(uint32 0, '#FF6E00'), (1, '#CB0C29'), (2, '#49A835'), (3, '#2D7DB3'), (4, '#f25915e815e8'), (5, '#f25915e815e8'), (6, '#f25915e815e8'), (7, '#f25915e815e8')]
+current-tab='processes'
+maximized=false
+show-dependencies=false
+show-whose-processes='all'
+window-state=(700, 500, 46, 28)
+
+[gnome-system-monitor/disktreenew]
+col-6-visible=true
+col-6-width=0
+
+[gnome-system-monitor/proctree]
+columns-order=[0, 1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+sort-col=8
+sort-order=0
+
+[gthumb/browser]
+fullscreen-sidebar='hidden'
+fullscreen-thumbnails-visible=false
+maximized=true
+sidebar-sections=['GthFileProperties:expanded', 'GthFileComment:expanded', 'GthFileDetails:expanded', 'GthImageHistogram:expanded']
+sidebar-visible=true
+sort-inverse=false
+sort-type='file::mtime'
+startup-current-file='file:///home/chuqq/work/ubuntu-16.04%E5%AE%89%E8%A3%85%E5%9C%A8matebook13%E4%B8%8A%E6%95%88%E6%9E%9C.png'
+startup-location='file:///home/chuqq/work'
+statusbar-visible=true
+thumbnail-list-visible=true
+viewer-sidebar='hidden'
+
+[gthumb/data-migration]
+catalogs-2-10=true
+
+[gthumb/general]
+active-extensions=['23hq', 'bookmarks', 'burn_disc', 'catalogs', 'change_date', 'comments', 'contact_sheet', 'convert_format', 'desktop_background', 'edit_metadata', 'exiv2_tools', 'facebook', 'file_manager', 'find_duplicates', 'flicker', 'gstreamer_tools', 'gstreamer_utils', 'image_print', 'image_rotation', 'importer', 'jpeg_utils', 'list_tools', 'oauth', 'photo_importer', 'photobucket', 'picasaweb', 'raw_files', 'red_eye_removal', 'rename_series', 'resize_images', 'search', 'selections', 'slideshow', 'webalbums']
+
+[gthumb/gstreamer-tools]
+volume=100
+
+[maps]
+last-viewed-location=[31.97624644509834, 118.73667240142822]
+map-type='MapsStreetSource'
+transportation-type='pedestrian'
+window-maximized=true
+zoom-level=15
+
+[mutter]
+overlay-key='Super_L'
+
+[nautilus/compression]
+default-compression-format='zip'
+
+[nautilus/list-view]
+default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed', 'recency', 'starred', 'detailed_type']
+default-visible-columns=['name', 'size', 'date_modified', 'starred']
+
+[nautilus/preferences]
+default-folder-viewer='list-view'
+search-filter-time-type='last_modified'
+search-view='list-view'
+
+[nautilus/window-state]
+initial-size=(1070, 1346)
+maximized=false
+
+[nm-applet/eap/1d1b910b-6ae4-4f7e-b3dd-3c5a08835a1f]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[nm-applet/eap/7cb76f97-dc89-49ab-a0cf-032e47e4547a]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[nm-applet/eap/bfd3c8ae-e946-4723-b788-e6dc930d2976]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[nm-applet/eap/de95aaf0-4f98-48eb-9b5d-dda6e438eb82]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[settings-daemon/peripherals/keyboard]
+numlock-state='off'
+
+[settings-daemon/plugins/color]
+night-light-enabled=true
+night-light-temperature=uint32 3624
+
+[settings-daemon/plugins/media-keys]
+control-center=['<Super>s']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+home=['<Super>e']
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Primary><Alt>t'
+command='tilix'
+name='tilix'
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding=''
+command='nautilus'
+name='nautilus'
+
+[settings-daemon/plugins/power]
+sleep-inactive-ac-timeout=7200
+sleep-inactive-battery-timeout=1200
+
+[settings-daemon/plugins/xsettings]
+hinting='slight'
+
+[shell]
+app-picker-view=uint32 1
+command-history=['gvim', 'terminator', 'nvim', 'neovim', 'terminal', 'ls', 'htop']
+enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'pamac-updates@manjaro.org', 'arc-menu@linxgem33.com', 'dash-to-panel@jderose9.github.com']
+favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'leafpad.desktop', 'visual-studio-code.desktop', 'com.gexperts.Tilix.desktop']
+
+[shell/extensions/arc-menu]
+enable-pinned-apps=true
+menu-hotkey='Undefined'
+pinned-app-list=['Google Chrome', 'google-chrome', 'google-chrome.desktop', 'Terminal', 'utilities-terminal', 'org.gnome.Terminal.desktop', 'Arc Menu Settings', 'emblem-system-symbolic', 'gnome-shell-extension-prefs arc-menu@linxgem33.com']
+position-in-panel='Left'
+show-bookmarks=false
+
+[shell/extensions/dash-to-dock]
+apply-custom-theme=true
+custom-theme-shrink=true
+dash-max-icon-size=27
+dock-fixed=false
+dock-position='LEFT'
+extend-height=true
+height-fraction=0.90000000000000002
+icon-size-fixed=true
+intellihide-mode='FOCUS_APPLICATION_WINDOWS'
+multi-monitor=false
+preferred-monitor=0
+running-indicator-style='DOTS'
+show-apps-at-top=false
+show-show-apps-button=true
+
+[shell/extensions/dash-to-panel]
+appicon-margin=1
+appicon-padding=2
+dot-position='BOTTOM'
+dot-style-focused='METRO'
+dot-style-unfocused='DOTS'
+hot-keys=true
+hotkeys-overlay-combo='TEMPORARILY'
+intellihide=true
+intellihide-hide-from-windows=true
+isolate-workspaces=false
+location-clock='STATUSLEFT'
+panel-position='TOP'
+panel-size=28
+show-activities-button=true
+show-appmenu=false
+taskbar-position='LEFTPANEL'
+
+[shell/keybindings]
+toggle-overview=@as []
+
+[shell/weather]
+automatic-location=true
+locations=[<(uint32 2, <('Nanjing', 'ZSNJ', false, [(0.55850536063818546, 2.0734511513692633)], @a(dd) [])>)>]
+
+[shell/world-clocks]
+locations=@av []
+
+[terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+audible-bell=false
+background-color='rgb(0,43,54)'
+cursor-blink-mode='on'
+font='Source Code Pro 11'
+foreground-color='rgb(131,148,150)'
+palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(0,43,54)', 'rgb(203,75,22)', 'rgb(88,110,117)', 'rgb(101,123,131)', 'rgb(131,148,150)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
+use-theme-colors=false
+visible-name='chuqq'
+
+[todo]
+default-provider='local'
+view='grid'
+window-maximized=false
+window-position=[8, 6]
+window-size=[1024, 633]
