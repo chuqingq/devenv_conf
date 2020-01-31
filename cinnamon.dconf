@@ -31,15 +31,10 @@ scaling-factor=uint32 2
 toolkit-accessibility=false
 
 [desktop/keybindings]
-custom-list=['custom0']
-
-[desktop/keybindings/custom-keybindings/custom0]
-binding=['<Super>e']
-command='nemo'
-name='nemo'
+custom-list=@as []
 
 [desktop/keybindings/media-keys]
-home=['XF86Explorer']
+home=['XF86Explorer', '<Super>e']
 
 [desktop/sound]
 event-sounds=false
