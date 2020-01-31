@@ -38,9 +38,10 @@ size=(870, 650)
 state=43908
 
 [control-center]
-last-panel='info-overview'
+last-panel='keyboard'
 
 [desktop/a11y/applications]
+screen-magnifier-enabled=false
 screen-reader-enabled=false
 
 [desktop/a11y/magnifier]
@@ -304,18 +305,13 @@ night-light-temperature=uint32 3624
 
 [settings-daemon/plugins/media-keys]
 control-center=['<Super>s']
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
 home=['<Super>e']
 
 [settings-daemon/plugins/media-keys/custom-keybindings/custom0]
 binding='<Primary><Alt>t'
-command='tilix'
-name='tilix'
-
-[settings-daemon/plugins/media-keys/custom-keybindings/custom1]
-binding=''
-command='nautilus'
-name='nautilus'
+command='gnome-terminal'
+name='gnome-terminal'
 
 [settings-daemon/plugins/power]
 sleep-inactive-ac-timeout=7200
@@ -328,7 +324,7 @@ hinting='slight'
 app-picker-view=uint32 1
 command-history=['gvim', 'terminator', 'nvim', 'neovim', 'terminal', 'ls', 'htop', 'r']
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'pamac-updates@manjaro.org', 'arc-menu@linxgem33.com', 'dash-to-panel@jderose9.github.com', 'system-monitor@paradoxxx.zero.gmail.com']
-favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'leafpad.desktop', 'visual-studio-code.desktop', 'com.gexperts.Tilix.desktop']
+favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'visual-studio-code.desktop', 'org.gnome.gedit.desktop']
 
 [shell/extensions/arc-menu]
 enable-pinned-apps=true
@@ -362,7 +358,7 @@ dot-style-focused='METRO'
 dot-style-unfocused='DASHES'
 hot-keys=true
 hotkeys-overlay-combo='TEMPORARILY'
-intellihide=true
+intellihide=false
 intellihide-hide-from-windows=true
 isolate-workspaces=false
 location-clock='STATUSLEFT'
@@ -371,7 +367,7 @@ panel-size=28
 show-activities-button=true
 show-appmenu=false
 show-status-menu-all-monitors=true
-taskbar-locked=false
+taskbar-locked=true
 taskbar-position='LEFTPANEL'
 
 [shell/extensions/system-monitor]
@@ -425,15 +421,17 @@ locations=[<(uint32 2, <('Nanjing', 'ZSNJ', false, [(0.55850536063818546, 2.0734
 [shell/world-clocks]
 locations=@av []
 
+[terminal/legacy]
+new-terminal-mode='tab'
+theme-variant='dark'
+
 [terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 audible-bell=false
-background-color='rgb(0,43,54)'
-cursor-blink-mode='on'
-font='Source Code Pro 11'
-foreground-color='rgb(131,148,150)'
-palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(0,43,54)', 'rgb(203,75,22)', 'rgb(88,110,117)', 'rgb(101,123,131)', 'rgb(131,148,150)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
-use-theme-colors=false
-visible-name='chuqq'
+background-color='rgb(46,52,54)'
+font='Source Code Pro 10'
+foreground-color='rgb(211,215,207)'
+palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+use-system-font=false
 
 [todo]
 default-provider='local'
