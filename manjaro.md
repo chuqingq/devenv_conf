@@ -125,12 +125,50 @@ dconf dump /com/gexperts/Tilix/ > tilix.dconf
 dconf load /com/gexperts/Tilix/ < tilix.dconf
 ```
 
-## gnome配置
+## gnome-terminal配置
 
 ```
-dconf dump /org/gnome/ > gnome.dconf
-dconf load /org/gnome/ < gnome.dconf
+常规：
+    主题类型：暗色
+    新终端打开在：标签页
+配置文件：默认：
+    文本：
+        自定义字体：xxx
+        声音：终端响铃（关闭）
+    颜色：
+        文本和背景颜色：Tango暗色
+        调色板：Tango
+```
 
+也可以快速还原配置：
+```
+# dconf dump /org/gnome/terminal/ > gnome-terminal.dconf
+dconf load /org/gnome/terminal/ < gnome-terminal.dconf
+```
+
+## gnome配置
+
+安装dash-to-panel：
+```
+sudo pacman -S gnome-shell-extension-dash-to-panel
+```
+
+~~打开`https://extensions.gnome.org/`，安装gnome-extension的chrome插件；~~
+~~可能还需要安装host插件：~~
+```
+sudo pacman -S chrome-gnome-shell
+```
+
+~~在`https://extensions.gnome.org/`网站安装`system-monitor`插件；~~
+
+最后导入gnome配置：
+```
+# dconf dump /org/gnome/ > gnome.dconf
+dconf load /org/gnome/ < gnome.dconf
+```
+
+并删除dash-to-dock
+```
 # 删除dash-to-dock，只用dash-to-panel
 sudo pacman -R  manjaro-gnome-assets gnome-shell-extension-dash-to-dock
 ```
