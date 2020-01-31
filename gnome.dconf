@@ -38,7 +38,7 @@ size=(870, 650)
 state=43908
 
 [control-center]
-last-panel='keyboard'
+last-panel='wifi'
 
 [desktop/a11y/applications]
 screen-magnifier-enabled=false
@@ -216,7 +216,7 @@ include-pointer=false
 
 [gnome-system-monitor]
 cpu-colors=[(uint32 0, '#FF6E00'), (1, '#CB0C29'), (2, '#49A835'), (3, '#2D7DB3'), (4, '#f25915e815e8'), (5, '#f25915e815e8'), (6, '#f25915e815e8'), (7, '#f25915e815e8')]
-current-tab='processes'
+current-tab='resources'
 maximized=false
 show-dependencies=false
 show-whose-processes='user'
@@ -327,12 +327,14 @@ enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'drive-menu@gnome-shell-ext
 favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'visual-studio-code.desktop', 'org.gnome.gedit.desktop']
 
 [shell/extensions/arc-menu]
+arc-menu-placement='Panel'
 enable-pinned-apps=true
 menu-button-appearance='Icon'
 menu-hotkey='Undefined'
 pinned-app-list=['Google Chrome', 'google-chrome', 'google-chrome.desktop', 'Terminal', 'utilities-terminal', 'org.gnome.Terminal.desktop', 'Arc Menu Settings', 'emblem-system-symbolic', 'gnome-shell-extension-prefs arc-menu@linxgem33.com']
 position-in-panel='Left'
 show-bookmarks=false
+show-external-devices=false
 
 [shell/extensions/dash-to-dock]
 apply-custom-theme=true
@@ -351,11 +353,21 @@ show-apps-at-top=false
 show-show-apps-button=true
 
 [shell/extensions/dash-to-panel]
-appicon-margin=1
+appicon-margin=2
 appicon-padding=2
+dot-color-1='#5294e2'
+dot-color-2='#5294e2'
+dot-color-3='#5294e2'
+dot-color-4='#5294e2'
+dot-color-unfocused-1='#5294e2'
+dot-color-unfocused-2='#5294e2'
+dot-color-unfocused-3='#5294e2'
+dot-color-unfocused-4='#5294e2'
 dot-position='BOTTOM'
 dot-style-focused='METRO'
-dot-style-unfocused='DASHES'
+dot-style-unfocused='METRO'
+focus-highlight-color='#eeeeee'
+force-check-update=true
 hot-keys=true
 hotkeys-overlay-combo='TEMPORARILY'
 intellihide=false
