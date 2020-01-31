@@ -11,7 +11,7 @@ window-state=43908
 
 [bijiben]
 window-maximized=false
-window-position=(186, 73)
+window-position=(189, 63)
 window-size=(800, 600)
 
 [calendar]
@@ -29,6 +29,7 @@ video-x-resolution=960
 video-y-resolution=540
 
 [clocks]
+timer=uint32 300
 world-clocks=@aa{sv} []
 
 [clocks/state/window]
@@ -67,7 +68,7 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [desktop/notifications]
-application-children=['shadowsocks-qt5', 'gnome-power-panel', 'pamac-manager', 'netease-cloud-music', 'gnome-network-panel', 'org-gnome-nautilus', 'org-gnome-terminal', 'gnome-control-center', 'org-manjaro-pamac-manager', 'albert', 'wps-office-wpp', 'yelp', 'org-gnome-evince', 'google-chrome', 'qq', 'org-gnome-tweaks', 'com-gexperts-tilix', 'org-gnome-weather']
+application-children=['shadowsocks-qt5', 'gnome-power-panel', 'pamac-manager', 'netease-cloud-music', 'gnome-network-panel', 'org-gnome-nautilus', 'org-gnome-terminal', 'gnome-control-center', 'org-manjaro-pamac-manager', 'albert', 'wps-office-wpp', 'yelp', 'org-gnome-evince', 'google-chrome', 'qq', 'org-gnome-tweaks', 'com-gexperts-tilix', 'org-gnome-weather', 'synapse', 'org-gnome-clocks']
 
 [desktop/notifications/application/albert]
 application-id='albert.desktop'
@@ -89,6 +90,9 @@ application-id='google-chrome.desktop'
 
 [desktop/notifications/application/netease-cloud-music]
 application-id='netease-cloud-music.desktop'
+
+[desktop/notifications/application/org-gnome-clocks]
+application-id='org.gnome.clocks.desktop'
 
 [desktop/notifications/application/org-gnome-evince]
 application-id='org.gnome.Evince.desktop'
@@ -116,6 +120,9 @@ application-id='qq.desktop'
 
 [desktop/notifications/application/shadowsocks-qt5]
 application-id='shadowsocks-qt5.desktop'
+
+[desktop/notifications/application/synapse]
+application-id='synapse.desktop'
 
 [desktop/notifications/application/wps-office-wpp]
 application-id='wps-office-wpp.desktop'
@@ -211,7 +218,7 @@ cpu-colors=[(uint32 0, '#FF6E00'), (1, '#CB0C29'), (2, '#49A835'), (3, '#2D7DB3'
 current-tab='processes'
 maximized=false
 show-dependencies=false
-show-whose-processes='all'
+show-whose-processes='user'
 window-state=(700, 500, 46, 28)
 
 [gnome-system-monitor/disktreenew]
@@ -269,7 +276,7 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [nautilus/window-state]
-initial-size=(1070, 1346)
+initial-size=(1070, 498)
 maximized=false
 
 [nm-applet/eap/1d1b910b-6ae4-4f7e-b3dd-3c5a08835a1f]
@@ -319,12 +326,13 @@ hinting='slight'
 
 [shell]
 app-picker-view=uint32 1
-command-history=['gvim', 'terminator', 'nvim', 'neovim', 'terminal', 'ls', 'htop']
-enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'pamac-updates@manjaro.org', 'arc-menu@linxgem33.com', 'dash-to-panel@jderose9.github.com']
+command-history=['gvim', 'terminator', 'nvim', 'neovim', 'terminal', 'ls', 'htop', 'r']
+enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'pamac-updates@manjaro.org', 'arc-menu@linxgem33.com', 'dash-to-panel@jderose9.github.com', 'system-monitor@paradoxxx.zero.gmail.com']
 favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'leafpad.desktop', 'visual-studio-code.desktop', 'com.gexperts.Tilix.desktop']
 
 [shell/extensions/arc-menu]
 enable-pinned-apps=true
+menu-button-appearance='Icon'
 menu-hotkey='Undefined'
 pinned-app-list=['Google Chrome', 'google-chrome', 'google-chrome.desktop', 'Terminal', 'utilities-terminal', 'org.gnome.Terminal.desktop', 'Arc Menu Settings', 'emblem-system-symbolic', 'gnome-shell-extension-prefs arc-menu@linxgem33.com']
 position-in-panel='Left'
@@ -351,7 +359,7 @@ appicon-margin=1
 appicon-padding=2
 dot-position='BOTTOM'
 dot-style-focused='METRO'
-dot-style-unfocused='DOTS'
+dot-style-unfocused='DASHES'
 hot-keys=true
 hotkeys-overlay-combo='TEMPORARILY'
 intellihide=true
@@ -362,7 +370,50 @@ panel-position='TOP'
 panel-size=28
 show-activities-button=true
 show-appmenu=false
+show-status-menu-all-monitors=true
+taskbar-locked=false
 taskbar-position='LEFTPANEL'
+
+[shell/extensions/system-monitor]
+battery-display=false
+battery-graph-width=40
+battery-hidesystem=false
+battery-show-menu=false
+battery-show-text=false
+battery-style='digit'
+battery-time=false
+center-display=false
+compact-display=true
+cpu-graph-width=40
+cpu-individual-cores=false
+cpu-refresh-time=5000
+cpu-show-menu=true
+cpu-show-text=false
+cpu-style='graph'
+disk-display=true
+disk-graph-width=40
+disk-refresh-time=5000
+disk-show-menu=false
+disk-show-text=false
+disk-usage-style='pie'
+freq-display=false
+freq-graph-width=40
+gpu-display=false
+gpu-graph-width=40
+gpu-show-text=false
+icon-display=false
+memory-graph-width=40
+memory-show-menu=false
+memory-show-text=false
+move-clock=true
+net-graph-width=40
+net-refresh-time=5000
+net-show-text=false
+net-style='graph'
+show-tooltip=true
+swap-display=false
+thermal-graph-width=40
+thermal-sensor-file='/sys/class/hwmon/hwmon0/temp1_input'
 
 [shell/keybindings]
 toggle-overview=@as []
