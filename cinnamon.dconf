@@ -19,6 +19,9 @@ workspace-osd-duration=400
 workspace-osd-x=50
 workspace-osd-y=50
 
+[cinnamon-session]
+quit-time-delay=60
+
 [desktop/background]
 picture-options='stretched'
 picture-uri='file:///usr/share/backgrounds/wallpapers-2018/mountains-1412683.jpg'
