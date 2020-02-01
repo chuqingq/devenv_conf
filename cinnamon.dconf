@@ -44,7 +44,7 @@ custom-list=['custom1']
 
 [desktop/keybindings/custom-keybindings/custom1]
 binding=['<Super>r']
-command='albert show'
+command='albert toggle'
 name='albert'
 
 [desktop/keybindings/media-keys]
