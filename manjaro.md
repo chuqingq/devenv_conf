@@ -173,6 +173,12 @@ dconf load /org/gnome/ < gnome.dconf
 sudo pacman -R  manjaro-gnome-assets gnome-shell-extension-dash-to-dock
 ```
 
+## cinnamon配置
+
+导入`cinnamon.dconf`配置文件；
+设置日期时间格式为`%m/%d %a %H:%M`；
+
+
 # bios时间和系统时间同步（解决linux和win差8小时的问题）
 
 ```
