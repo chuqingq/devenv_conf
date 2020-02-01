@@ -69,7 +69,7 @@ name='gnome-tweaks'
 hinting='slight'
 
 [shell]
-favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.gedit.desktop', 'org.gnome.Terminal.desktop', 'pamac-manager.desktop', 'org.gnome.Empathy.desktop', 'hexchat.desktop', 'org.gnome.Screenshot.desktop', 'gnome-tweak-tool.desktop', 'calamares.desktop', 'manjaro-architect.desktop']
+favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop']
 
 [shell/extensions/arc-menu]
 pinned-app-list=['Google Chrome', 'google-chrome', 'google-chrome.desktop', 'Terminal', 'utilities-terminal', 'org.gnome.Terminal.desktop', 'Arc Menu Settings', 'emblem-system-symbolic', 'gnome-shell-extension-prefs arc-menu@linxgem33.com']
