@@ -37,5 +37,5 @@ EOF
 # 安装库
 
 ```
-pip install --user scipy numpy matplotlib tornadoweb
+pip install --user scipy numpy matplotlib tornadoweb sympy
 ```
