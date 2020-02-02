@@ -4,12 +4,13 @@ applet-cache-updated=1580520059
 command-history=['nvim', 'htop', 'gnome-terminal']
 desklet-cache-updated=1580486080
 desklet-snap-interval=25
-enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:4:systray@cinnamon.org:3', 'panel1:right:6:notifications@cinnamon.org:5', 'panel1:right:7:printers@cinnamon.org:6', 'panel1:right:8:removable-drives@cinnamon.org:7', 'panel1:right:9:keyboard@cinnamon.org:8', 'panel1:right:10:network@cinnamon.org:9', 'panel1:right:11:sound@cinnamon.org:10', 'panel1:right:12:power@cinnamon.org:11', 'panel1:right:13:calendar@cinnamon.org:12', 'panel1:right:3:workspace-switcher@cinnamon.org:13', 'panel1:right:0:xapp-status@cinnamon.org:16']
+enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:3:systray@cinnamon.org:3', 'panel1:right:6:removable-drives@cinnamon.org:7', 'panel1:right:7:keyboard@cinnamon.org:8', 'panel1:right:8:network@cinnamon.org:9', 'panel1:right:9:sound@cinnamon.org:10', 'panel1:right:10:power@cinnamon.org:11', 'panel1:right:11:calendar@cinnamon.org:12', 'panel1:right:2:workspace-switcher@cinnamon.org:13', 'panel1:right:1:xapp-status@cinnamon.org:16', 'panel1:right:4:notifications@cinnamon.org:19', 'panel1:right:5:qredshift@quintao:21']
 enabled-desklets=@as []
 favorite-apps=['google-chrome.desktop', 'cinnamon-settings.desktop', 'org.gnome.Terminal.desktop', 'nemo.desktop']
 hotcorner-layout=['expo:true:0', 'scale:false:0', 'scale:true:0', 'desktop:true:0']
-next-applet-id=17
+next-applet-id=22
 next-desklet-id=2
+panel-edit-mode=false
 panel-launchers=['DEPRECATED']
 panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 28, "center": 28, "right": 16}]'
 panels-autohide=['1:false']
@@ -21,6 +22,12 @@ workspace-osd-y=50
 
 [cinnamon-session]
 quit-time-delay=60
+
+[desktop/applications/calculator]
+exec='gnome-calculator'
+
+[desktop/applications/terminal]
+exec='gnome-terminal'
 
 [desktop/background]
 picture-options='stretched'
@@ -50,6 +57,9 @@ name='albert'
 [desktop/keybindings/media-keys]
 home=['XF86Explorer', '<Super>e']
 
+[desktop/media-handling]
+autorun-never=false
+
 [desktop/sound]
 event-sounds=false
 
@@ -60,6 +70,7 @@ workspace-names=@as []
 
 [settings-daemon/peripherals/keyboard]
 delay=uint32 500
+numlock-state='off'
 repeat-interval=uint32 30
 
 [settings-daemon/peripherals/mouse]
