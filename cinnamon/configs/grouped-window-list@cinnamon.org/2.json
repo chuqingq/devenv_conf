@@ -163,9 +163,9 @@
             "nemo.desktop"
         ],
         "value": [
-            "org.gnome.Terminal.desktop",
-            "nemo.desktop",
             "google-chrome.desktop",
+            "org.gnome.Nautilus.desktop",
+            "org.gnome.Terminal.desktop",
             "xed.desktop"
         ]
     },
