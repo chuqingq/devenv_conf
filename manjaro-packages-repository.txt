@@ -194,7 +194,6 @@ nasm
 nautilus
 neofetch
 neovim
-neovim-qt
 net-tools
 netctl
 netease-cloud-music
