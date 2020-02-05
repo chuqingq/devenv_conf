@@ -1,5 +1,0 @@
-gnome-shell-extension-manjaro-update
-jdk8
-manjaro-gdm-check
-xf86-input-keyboard
-xf86-input-mouse
