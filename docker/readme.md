@@ -10,7 +10,7 @@ EOF
 
 manjaro/arch:
 ```
-sudo tee /etc/docker/daemon.json < EOF
+sudo tee /etc/docker/daemon.json << EOF
 {
 "registry-mirrors": ["https://qcagxvko.mirror.aliyuncs.com"]
 }
