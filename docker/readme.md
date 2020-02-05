@@ -1,9 +1,19 @@
 ## ubuntu docker
 
+ubuntu:
 ```
 sudo tee -a /etc/default/docker << EOF
 DOCKER_OPTS="--registry-mirror=http://mirrors.ustc.edu.cn/docker-ce"
 
+EOF
+```
+
+manjaro/arch:
+```
+sudo tee /etc/docker/daemon.json < EOF
+{
+"registry-mirrors": ["https://qcagxvko.mirror.aliyuncs.com"]
+}
 EOF
 ```
 
@@ -32,3 +42,7 @@ sudo apt install gcc g++
 ## 自动操作
 
 参考dockerfile。未验证。
+```
+sudo docker build . -t ubuntu1404
+```
+
