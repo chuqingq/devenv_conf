@@ -32,7 +32,7 @@ sudo docker exec -it chuqq_ubuntu1404 /bin/bash
 # 在容器内
 
 # 修改apt源
-sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+sudo sed -i 's/archive.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list
 # 更新apt
 sudo apt update
 # 安装gcc、g++
