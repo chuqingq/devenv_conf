@@ -174,6 +174,23 @@ On 10.12 (Sierra) or later with SIP, you need to run this:
 
 * red hot timer
 
+# docker
+
+`brew install docker`
+或者从官网下载dmg包安装。
+设置源：
+`
+{
+  "debug": true,
+  "experimental": false,
+  "registry-mirrors": [
+    "https://docker.mirrors.ustc.edu.cn"
+  ]
+}
+`
+其中registry-mirrors部分是新增的。
+
+
 # 外接显示器注意事项
 
 * 不支持无源的hdmi转vga
